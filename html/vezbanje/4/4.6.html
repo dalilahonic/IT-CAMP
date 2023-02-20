@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+      }
+
+      button {
+        padding: 7px;
+        border: none;
+        border: radius 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button type="button" onclick="myFunction">klikni</button>
+    <p class="java">ovo je jedan paragraf</p>
+    
+    <!-- chenge color/my function - function we want to execute -->
+
+    <script>    
+      function myFunction() {
+        document.getElementByClassName("java").innerHTML = "nesto reci";
+      }
+    </script>
+
+    <!-- getElementById(), getElementsByClassName(), or the querySelector() methods. Then you store the value in a variable. -->
+  </body>
+</html>

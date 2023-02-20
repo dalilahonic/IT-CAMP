@@ -1,0 +1,2 @@
+git config - -global user.name Dalila Honic
+git config - -global user.email dalilahonic1@gmail.com
