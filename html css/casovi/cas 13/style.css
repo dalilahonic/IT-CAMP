@@ -1,0 +1,43 @@
+.childDiv {
+  border: 2px solid black;
+  width: 30%;
+  height: 500px;
+  position: absolute;
+  bottom: 80px;
+  right: 450px;
+  background-color: rgb(241, 241, 191);
+}
+
+.childDiv img {
+  width: 90%;
+  height: 40%;
+  position: relative;
+  top: -20px;
+  right: -20px;
+}
+
+.childDiv h1 {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+.mainContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerTwo {
+  width: 60%;
+  height: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

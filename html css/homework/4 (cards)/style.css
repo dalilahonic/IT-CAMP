@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(252, 252, 199);
+  margin: 0;
+}
+
+div.divElement {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+div.prviDiv,
+div.drugiDiv,
+div.treciDiv {
+  width: 30%;
+  height: 350px;
+  border: 2px solid grey;
+  background-color: white;
+  margin-top: 170px;
+}
+
+div.obojeniDiv {
+  background-color: rgb(192, 85, 192);
+  width: 100%;
+  height: 40%;
+}
+
+.obojeniDiv h1,
+.obojeniDiv p {
+  text-align: center;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 15px;
+}
+
+.obojeniDiv p {
+  font-size: 20px;
+}
+
+.obojeniDiv img {
+  width: 10%;
+  height: 20%;
+  background-color: white;
+  float: left;
+  margin-left: 25%;
+}
+
+.prviDiv {
+  text-align: center;
+  color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-s-dtart;
+}
+
+.drugiDiv img {
+  width: 100%;
+  height: 50%;
+}
+
+.drugiDiv h1,
+.drugiDiv h2,
+.drugiDiv p {
+  text-align: center;
+}
+
+.drugiDiv h1 {
+  font-size: 30px;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.drugiDiv h2 {
+  font-size: 18px;
+  margin-top: 7px;
+}
+
+.drugiDiv p {
+  padding: 10px;
+}
+
+.treciDiv h1 {
+  font-size: 30px;
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+
+.treciDiv img {
+  width: 100%;
+  height: 50%;
+}
+
+.treciDiv h1,
+.treciDiv p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+div p {
+  color: grey;
+}
+
+.treciDiv button {
+  float: left;
+  width: 30%;
+  height: 12%;
+  background-color: blue;
+  color: white;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+}

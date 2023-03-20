@@ -1,0 +1,65 @@
+h1 {
+    font-style: Klavika;
+    font-size: 30px;
+    color: blue;
+    margin-left: 80px;
+    margin-top: 300px;
+}
+
+p {
+    margin-left: 80px;
+}
+
+body {
+    background-color: grey;
+}
+
+input {
+    width:80%;
+    margin-left:10%;
+    height: 40px;
+    margin-top:30px;
+}
+
+.sifra {
+    margin-top: 15px;;
+}
+
+div {
+    width:30%;
+    height:375px;
+    margin-right:90px;
+    background-color: white;
+    float: right;
+    margin-top:-220px;
+}
+
+button {
+    width: 80%;
+    margin-left:10%;
+    height: 40px;
+    margin-top:15px;
+    font-weight: bold;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.drugiparagraf {
+    color: blue;
+    text-align: center;
+    font-weight: bold;
+    margin-right:15%;
+}
+
+hr {
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+.drugodugme {
+    background-color: green;
+    margin-left: 20%;
+    margin-right: 20%;
+    width:60%;
+}

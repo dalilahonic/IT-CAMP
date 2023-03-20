@@ -1,0 +1,25 @@
+div.prvi, div.drugi, div.treci {
+    height: 500px;
+    width: 25%;
+    border: 2px solid grey;
+    margin-left: 50px;
+    margin-top:70px;
+
+}
+
+.prvi img, .drugi img, .treci img {
+    width: 100%;
+    height: 30%;
+}
+
+div.glavnidiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+}
+

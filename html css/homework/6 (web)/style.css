@@ -1,0 +1,254 @@
+body {
+  margin: 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border-bottom: 1px solid rgb(213, 208, 208);
+}
+
+.navLeft {
+  width: 50%;
+  background-color: rgb(255, 247, 232);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.navRight {
+  width: 50%;
+  height: 40px;
+  background-color: rgb(255, 247, 232);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.navRight a {
+  margin-right: 20px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.563);
+  font-weight: 200;
+}
+
+.navRight i {
+  font-size: 20px;
+  color: grey;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.rightHeader {
+  width: 50%;
+  height: 65px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.leftHeader {
+  width: 50%;
+  height: 65px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightHeader a {
+  text-decoration: none;
+  font-size: 20px;
+  color: grey;
+}
+
+.rightHeader button {
+  border-radius: 20px;
+  background-color: rgb(255, 0, 200);
+  width: 15%;
+  height: 33px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.leftHeader h1 {
+  margin-left: 100px;
+}
+
+.slikaDiv {
+  background-image: url(./img/notebook\ image.jpg);
+  background-repeat: no-repeat;
+  height: 320px;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  display: inline-block;
+}
+
+.slikaDiv h1 {
+  text-align: center;
+  font-size: 70px;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-family: Roboto;
+  letter-spacing: 5px;
+}
+
+.slikaDiv p {
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  margin: 10px 100px 0px 100px;
+  line-height: 23px;
+  font-family: Roboto;
+}
+
+.slikaDiv button {
+  color: white;
+  width: 170px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.bottomDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.divOnTheLeft {
+  width: 33%;
+  height: 208px;
+  background-color: rgb(255, 250, 245);
+}
+
+.divOnTheLeft h3 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 37px;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.divOnTheLeft h1 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-left: 37px;
+  font-weight: 400;
+}
+
+.divOnTheLeft p {
+  margin-left: 37px;
+  font-weight: 200;
+  margin-right: 20px;
+}
+
+.divInTheCenter {
+  width: 34%;
+  height: 208px;
+  background-color: rgba(202, 24, 164, 0.826);
+}
+
+.divInTheCenter h3 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 37px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.divInTheCenter h1 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-left: 37px;
+  font-weight: 400;
+  color: white;
+}
+
+.divInTheCenter p {
+  margin-left: 37px;
+  font-weight: 400;
+  margin-right: 20px;
+  color: white;
+}
+
+.divOnTheRight {
+  width: 33%;
+  height: 208px;
+  background-color: black;
+}
+
+.divOnTheRight h3 {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 37px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: white;
+}
+
+.divOnTheRight h1 {
+  font-size: 25px;
+  margin-top: 0;
+  margin-left: 37px;
+  font-weight: 400;
+  color: white;
+}
+
+.divOnTheRight p {
+  margin-left: 37px;
+  font-weight: 400;
+  margin-right: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+.bottomDiv {
+  width: 100%;
+}
+
+#ovoJeIkonica {
+  margin-left: 15px;
+  color: grey;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.leftHeader h1 {
+  font-family: "Annie Use Your Telescope";
+}
+
+.mozdaRadi {
+  font-size: 30px;
+  font-family: Roboto;
+  font-weight: 200;
+}
+
+.bottomDiv {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.bottomDiv p {
+  font-size: 13px;
+}

@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+div.headerDiv {
+  height: 80px;
+  width: 50%;
+  background-color: #5050df;
+  display: flex;
+  align-items: center;
+}
+
+.headerDiv h1 {
+  color: white;
+  margin-left: 20px;
+}
+
+div.headerDivRight {
+  width: 50%;
+  height: 80px;
+  background-color: #5050df;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 25px;
+}
+
+.headerDivRight a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: white;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: ;
+  align-items: center;
+  background-color: white;
+  height: 553px;
+}
+
+div.leftMain {
+  background-color: rgb(35, 35, 120);
+  width: 30%;
+  height: 430px;
+  margin-left: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.headerOfMain {
+  background-color: #5050df;
+  height: 17%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.headerOfMain h1 {
+  color: white;
+  margin-left: 10px;
+}
+
+.mainOfMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 21px;
+}
+
+.mainOfMain a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  margin-top: 25px;
+}
+
+.mainOfMain a:hover {
+  color: #5050df;
+}
+
+.rightMain h1 {
+  margin-left: 20px;
+  color: #5050df;
+  line-height: 60px;
+  font-size: 70px;
+  margin-bottom: 0;
+}
+
+.rightMain h2 {
+  color: white;
+  font-size: 70px;
+  margin-left: 20px;
+  background-color: #5050df;
+  margin-top: 10px;
+}
