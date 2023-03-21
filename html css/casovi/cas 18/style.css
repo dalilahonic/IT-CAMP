@@ -1,0 +1,30 @@
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.box {
+    background-color: brown;
+    width: 30%;
+    height: 200px;
+    transition:2s ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.box:hover i {
+    transform: rotate(120deg);
+}
+
+i {
+    font-size: 30px;
+    transition:2s ;
+}
