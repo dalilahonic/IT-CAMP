@@ -33,6 +33,7 @@ a.logoLink:hover {
     margin: 15% 0%;
     /* margina radi sa display flex na .navigation a ovako ne? */
     color: white;
+    font-weight: 600;
 }
 
 .navigation a:hover {
@@ -47,16 +48,18 @@ div.homeoffice {
 
 .homeoffice p {
     font-weight: 100;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 .button1, .button2 {
-    width: 180px;
-    height: 40px;
-    border-radius: 17px;
-    margin: 7px 0px;
+    width: 214px;
+    height: 48px;
+    border-radius: 50px;
+    margin: 10px 0px;
     border: 1.5px solid white;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .button1 {
@@ -76,7 +79,7 @@ div.homeoffice {
     height: 140px;
     display: flex;
     flex-direction: column;
-    margin-left: 3%;
+    margin-left: 9%;
 }
 
 .button1:hover {
@@ -96,7 +99,6 @@ div.homeoffice {
     display: flex;
     justify-content: center;
     gap: 1%;
-    margin-left: 4%;
 }
 
 .iconContainer i {
@@ -122,10 +124,10 @@ div.information {
 div.information a {
     text-decoration: none;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
     float: left;
     margin:10px 15px;
-    font-size: 15px;
+    font-size: 18px;
     
 }
 
@@ -145,7 +147,7 @@ div.copyright {
     padding: 105px 0px;
     color: white;
     font-weight: 300;
-    margin: 0% 1w2px 0% 5%;
+    margin: 0% 12px 0% 5%;
 }
 
 .language {
@@ -179,17 +181,18 @@ div.copyright {
     text-decoration: underline;
 }
 
-div.disclaimer {
+div.disclaimer1 {
     color:white;
     margin: 5% 5% 7% 16%;
     font-weight: 350;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 26px;
 }
 
-.disclaimer p {
+.disclaimer1 p {
     font-weight: 100;
 }
 
-.disclaimer p b {
+.disclaimer1 p b {
     font-weight: 1000;
 }

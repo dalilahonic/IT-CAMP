@@ -274,12 +274,12 @@ div.companiesUs img, div.companiesCanada img {
   text-align: center;
 }
 
-.discoverMore button {
+.discoverMore button, .lastContainer button {
   display:block;
   margin: auto;
 }
 
-.discoverMore button, .buildBusiness button {
+.discoverMore button, .buildBusiness button, .lastContainer button {
   width: 200px;
   height: 48px;
   background-color:rgb(86, 86, 255);
@@ -292,7 +292,7 @@ div.companiesUs img, div.companiesCanada img {
   font-weight: 600;
 }
 
-.discoverMore button:hover, .buildBusiness button:hover {
+.discoverMore button:hover, .buildBusiness button:hover, .lastContainer button:hover {
   background-color: transparent;
   border: 2px solid rgb(86, 86, 255);
   cursor: pointer;
@@ -342,4 +342,229 @@ div.buildBusiness p {
 
 .container {
   display: flex;
+}
+
+div.lastContainer img {
+  width: 400px;
+  display: block;
+  margin:auto;
+  margin-top: 100px;
+}
+
+.lastContainer h1 {
+  font-size: 51px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+.lastContainer h1 span {
+  color: #4479bd;
+}
+
+.lastContainer p {
+  color: #4a4a4a;
+  font-size: 18px;
+  text-align: center;
+}
+
+.lastContainer button {
+  width: 283px;
+  height: 50px;
+  margin-bottom: 90px;
+}
+
+/*  ........................................END OF MAIN................................................................ */
+
+footer {
+  overflow: hidden;
+  background-color: #4a4a4a;
+}
+.logoImage {
+  height: 100px;
+  margin: 10% 20%;
+  filter:invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
+}
+
+a.logoLink:hover {
+  cursor: pointer;
+}
+
+.firstContainer {
+  display: flex;
+}
+
+.navigation {
+  margin: 1% 8%;
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+}
+
+.navigation a {
+  text-decoration: none;
+  margin: 15% 0%;
+  /* margina radi sa display flex na .navigation a ovako ne? */
+  color: white;
+  font-weight: 600;
+}
+
+.navigation a:hover {
+  color: #f6d44f;
+}
+
+div.homeoffice {
+  margin: 8% 0% 0% 15%;
+  color: white;
+  font-size: 15px;
+}
+
+.homeoffice p {
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.button1, .button2 {
+  width: 214px;
+  height: 48px;
+  border-radius: 50px;
+  margin: 10px 0px;
+  border: 1.5px solid white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.button1 {
+  background-color: transparent;
+  color: white;
+  transition: 0.5s;
+}
+
+.button2 {
+  background-color: white;
+  color: #406fa5;
+  transition: 0.5s;
+}
+
+.button {
+  padding: 20px 0px 0px 110px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 9%;
+}
+
+.button1:hover {
+  color: #406fa5;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button2:hover {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.iconContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1%;
+}
+
+.iconContainer i {
+  font-size: 28px;
+  color: white;
+  transition: 2s;
+}
+
+.iconContainer i:hover {
+  transform: rotate(360deg);
+}
+
+div.line {
+  margin: 4% 5% 2% 5%;
+  border-bottom: 1px solid white;
+}
+
+div.information {
+  margin: 1% 0% 0% 15%;
+  width: 50%;
+}
+
+div.information a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  float: left;
+  margin:10px 15px;
+  font-size: 18px;
+  
+}
+
+.information a:hover {
+  color: #f6d44f;
+}
+
+div.copyright {
+  display: inline-block;
+}
+
+.ononase {
+  display: flex;
+}
+
+.copyright {
+  padding: 105px 0px;
+  color: white;
+  font-weight: 300;
+  margin: 0% 12px 0% 5%;
+}
+
+.language {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5%;
+  color: white;
+}
+
+.en {
+  padding: 0px 2%;
+  border-right: 2px solid white;
+  text-decoration: underline;
+  color: #e5cc63;
+}
+
+.franc {
+  padding: 0px 2%;
+}
+
+.en:hover, .franc:hover {
+  cursor: pointer;
+}
+
+.franc {
+  transition: 1s;
+}
+
+.franc:hover {
+  color: #f6d44f;
+  text-decoration: underline;
+}
+
+div.disclaimer1 {
+  color:white;
+  margin: 5% 5% 7% 16%;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.disclaimer1 p {
+  font-weight: 100;
+}
+
+.disclaimer1 p b {
+  font-weight: 1000;
 }
