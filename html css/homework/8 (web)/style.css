@@ -4,14 +4,14 @@ header {
 
 .logoDiv {
   width: 30%;
-  height: 65px;
+  height: 81px;
   background-color: #004369;
   display: flex;
   align-items: center;
 }
 
 .logo1 {
-  margin-left: 40px;
+  margin-left: 50px;
   color: white;
   font-family: Roboto, "sans-serif";
 }
@@ -23,28 +23,28 @@ header {
 
 .header {
   width: 50%;
-  height: 65px;
+  height: 81px;
   /* background-color: #5d5dd2;  */
   background-color: #004369;
   /* background-color: #6699cc;  */
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 37px;
 }
 
 a {
   color: white;
-  font-size: 20px;
+  font-size: 1.563rem;
   text-decoration: none;
 }
 
 .singUpLink {
-  margin-left: 20px;
+  margin-left: 203px;
 }
 
 .headerRight {
   width: 30%;
-  height: 65px;
+  height: 81px;
   background-color: #004369;
   display: flex;
   align-items: center;
@@ -53,12 +53,12 @@ a {
 
 i {
   color: white;
-  margin: 0px 10px;
-  font-size: 23px;
+  margin: 0px 12px;
+  font-size: 28.7px;
 }
 
 #searchIcon {
-  margin-left: 90px;
+  margin-left: 110px;
 }
 
 body {
@@ -72,7 +72,7 @@ i:hover {
 
 .mainDiv {
   width: 100%;
-  height: 727px;
+  height: 710px;
   overflow: hidden;
   background-image: url(https://media.istockphoto.com/id/1125784405/photo/hands-planting-the-seedlings-into-the-ground.jpg?b=1&s=170667a&w=0&k=20&c=FprBp-VPf-BgIwR8zGA7inK5k_W1a4jlKTATfF_am6Y=);
   background-repeat: no-repeat;
@@ -82,7 +82,7 @@ i:hover {
 .mainDiv h1 {
   color: rgb(21, 21, 21);
   text-align: center;
-  font-size: 60px;
+  font-size: 75px;
   font-family: Open Sans, Montserrat;
   font-weight: 500;
   margin-top: 80px;
@@ -90,7 +90,7 @@ i:hover {
 
 .boxContainer {
   width: 100%;
-  height: 170px;
+  height: 210px;
   display: flex;
   justify-content: center;
 }
@@ -108,7 +108,7 @@ i:hover {
 }
 
 .boxContainer i {
-  font-size: 30px;
+  font-size:40px;
   position: absolute;
   color: black;
   background-color: transparent;
@@ -118,7 +118,7 @@ i:hover {
   position: absolute;
   bottom: 1%;
   color: black;
-  font-size: 20px;
+  font-size: 25px;
   font-family: "Open Sans";
   text-transform: uppercase;
 }
@@ -127,7 +127,7 @@ i:hover {
   background-color: #004369;
   cursor: pointer;
   transform: scaleY(1.1);
-  font-size: 21px;
+  font-size: 26.25px;
 }
 
 .boxContainer div:hover h4,
@@ -137,20 +137,20 @@ i:hover {
 
 .inputDiv input {
   width: 40%;
-  height: 50px;
-  margin-top: 50px;
-  padding: 10px;
+  height: 60px;
+  margin-top: 60px;
+  padding: 12px;
   box-sizing: border-box;
 }
 
 button {
   width: 10%;
-  height: 50px;
-  padding: 10px;
+  height: 60px;
+  padding: 12px;
   background-color: #db1f48;
   color: white;
   border: none;
-  margin-top: 50px;
+  margin-top:62px;
 }
 
 .inputDiv {

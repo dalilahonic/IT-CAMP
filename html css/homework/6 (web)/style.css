@@ -12,32 +12,32 @@ body {
 .navLeft {
   width: 50%;
   background-color: rgb(255, 247, 232);
-  height: 40px;
+  height: 6.31vh;
   display: flex;
   align-items: center;
 }
 
 .navRight {
   width: 50%;
-  height: 40px;
+  height: 50px;
   background-color: rgb(255, 247, 232);
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .navRight a {
-  margin-right: 20px;
+  margin-right: 25px;
   text-decoration: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 25px;
   color: rgba(0, 0, 0, 0.563);
   font-weight: 200;
 }
 
 .navRight i {
-  font-size: 20px;
+  font-size: 25px;
   color: grey;
   background-color: transparent;
   cursor: pointer;
@@ -45,20 +45,20 @@ body {
 
 .rightHeader {
   width: 50%;
-  height: 65px;
+  height: 81px;
   background-color: white;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap:  15px;
   justify-content: center;
 }
 
 .leftHeader {
   width: 50%;
-  height: 65px;
+  height: 81px;
   background-color: white;
   display: flex;
-  align-items: center;
+  align-items:center;
 }
 
 .header {
@@ -68,7 +68,7 @@ body {
 
 .rightHeader a {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   color: grey;
 }
 
@@ -76,20 +76,21 @@ body {
   border-radius: 20px;
   background-color: rgb(255, 0, 200);
   width: 15%;
-  height: 33px;
+  height: 40px;
   border: none;
   color: white;
   cursor: pointer;
+  font-size: 17px;
 }
 
 .leftHeader h1 {
-  margin-left: 100px;
+  margin-left: 125px;
 }
 
 .slikaDiv {
   background-image: url(./img/notebook\ image.jpg);
   background-repeat: no-repeat;
-  height: 320px;
+  height: 400px;
   width: 100%;
   background-size: cover;
   background-attachment: fixed;
@@ -98,35 +99,35 @@ body {
 
 .slikaDiv h1 {
   text-align: center;
-  font-size: 70px;
+  font-size: 87px;
   color: white;
-  margin-top: 20px;
+  margin-top:25px;
   margin-bottom: 0;
   font-family: Roboto;
-  letter-spacing: 5px;
+  letter-spacing: 6.5px;
 }
 
 .slikaDiv p {
   color: white;
   text-align: center;
-  font-size: 17px;
-  margin: 10px 100px 0px 100px;
-  line-height: 23px;
+  font-size: 21px;
+  margin: 12px 125px 0px 125px;
+  line-height: 28.5px;
   font-family: Roboto;
 }
 
 .slikaDiv button {
   color: white;
-  width: 170px;
-  height: 40px;
+  width:  212px;
+  height: 50px;
   margin-left: auto;
   margin-right: auto;
   display: block;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 20px;
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 12px;
+  padding: 12px;
   cursor: pointer;
 }
 
@@ -137,88 +138,88 @@ body {
 
 .divOnTheLeft {
   width: 33%;
-  height: 366px;
+  height: 260px;
   background-color: rgb(255, 250, 245);
 }
 
 .divOnTheLeft h3 {
-  font-size: 15px;
+  font-size: 18.75px;
   font-weight: 300;
-  margin-left: 37px;
-  margin-top: 30px;
+  margin-left: 46px;
+  margin-top: 37px;
   margin-bottom: 0;
 }
 
 .divOnTheLeft h1 {
-  font-size: 25px;
+  font-size: 31px;
   margin-top: 0;
-  margin-left: 37px;
+  margin-left: 46px;
   font-weight: 400;
 }
 
 .divOnTheLeft p {
-  margin-left: 37px;
+  margin-left: 46px;
   font-weight: 200;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .divInTheCenter {
   width: 34%;
-  height: 366px;
+  height: 260px;
   background-color: rgba(202, 24, 164, 0.826);
 }
 
 .divInTheCenter h3 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
-  margin-left: 37px;
-  margin-top: 30px;
+  margin-left: 46px;
+  margin-top: 37px;
   margin-bottom: 0;
   color: white;
 }
 
 .divInTheCenter h1 {
-  font-size: 25px;
+  font-size: 31px;
   margin-top: 0;
-  margin-left: 37px;
+  margin-left: 46px;
   font-weight: 400;
   color: white;
-}
+} 
 
 .divInTheCenter p {
-  margin-left: 37px;
+  margin-left: 46px;
   font-weight: 400;
-  margin-right: 20px;
+  margin-right: 25px;
   color: white;
 }
 
 .divOnTheRight {
   width: 33%;
-  height: 366px;
+  height: 260px;
   background-color: black;
 }
 
 .divOnTheRight h3 {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
-  margin-left: 37px;
-  margin-top: 30px;
+  margin-left: 46px;
+  margin-top: 46px;
   margin-bottom: 0;
   color: white;
 }
 
 .divOnTheRight h1 {
-  font-size: 25pxpx;
+  font-size: 31px;
   margin-top: 0;
-  margin-left: 37px;
+  margin-left: 46px;
   font-weight: 400;
   color: white;
 }
 
 .divOnTheRight p {
-  margin-left: 37px;
+  margin-left: 46px;
   font-weight: 400;
-  margin-right: 20px;
+  margin-right: 25px;
   color: white;
   font-weight: 100;
 }
@@ -228,9 +229,9 @@ body {
 }
 
 #ovoJeIkonica {
-  margin-left: 15px;
+  margin-left: 18px;
   color: grey;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 
@@ -239,7 +240,7 @@ body {
 }
 
 .mozdaRadi {
-  font-size: 30px;
+  font-size: 37px;
   font-family: Roboto;
   font-weight: 200;
 }
@@ -250,5 +251,5 @@ body {
 }
 
 .bottomDiv p {
-  font-size: 13px;
+  font-size: 16px;
 }

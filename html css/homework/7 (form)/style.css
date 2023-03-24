@@ -1,23 +1,23 @@
 .mainDiv {
   width: 40%;
-  height: 580px;
+  height: 650px;
   /* background-color: #d3c6a8; */
   background-color: #f9e4a6b0;
-  margin: 50px;
+  margin: 62.5px;
   overflow: hidden;
   display: block;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 62.5px;
   box-shadow: 10px 10px 15px rgba(128, 128, 128, 0.701);
 }
 
 h1.paymentForm {
   width: 90%;
   border: 2px dotted darkgrey;
-  font-size: 25px;
+  font-size: 31px;
   text-align: center;
   margin: 4% 5% 0% 5%;
-  padding: 3px;
+  padding: 4px;
   color: rgba(0, 128, 0, 0.712);
   font-weight: bold;
   background-color: #fff5d5ac;
@@ -27,9 +27,9 @@ h1.paymentForm {
 .dateOfBirthLabel,
 .genderLabel,
 .paymentDetailsLabel {
-  margin: 0px 18px;
+  margin: 0px 22.5px;
   color: rgba(0, 128, 0, 0.712);
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -38,7 +38,7 @@ h1.paymentForm {
 .paymentDetailsInput,
 .cardCvcInput {
   width: 40%;
-  padding: 10px;
+  padding: 12.5px;
 }
 
 .fullNameInput,
@@ -55,14 +55,14 @@ h1.paymentForm {
 .emailAdressInput,
 .cardNumberInput {
   width: 90%;
-  padding: 10px;
+  padding: 12.5px;
   margin: 2% 3%;
 }
 
 .dateOfBirthInput {
   width: 8%;
-  padding: 10px;
-  margin-bottom: 9px;
+  padding: 12.5px;
+  margin-bottom: 11px;
 }
 
 #ddInput {
@@ -70,18 +70,18 @@ h1.paymentForm {
 }
 
 .genderLabel {
-  margin-left: 90px;
+  margin-left: 112px;
 }
 
 .genderInput,
 .monthInput,
 .yearInput {
   width: 18%;
-  padding: 10px 7px;
+  padding: 12px 8px;
   margin: 0px 0px 0px 0px;
   color: black;
   text-align: center;
-  font-size: 15px;
+  font-size: 18.5px;
   font-weight: 500;
 }
 
@@ -95,17 +95,17 @@ h1.paymentForm {
 
 .payNowButton {
   width: 94%;
-  padding: 13px;
+  padding: 16px;
   margin: 3% 3%;
   background-color: rgba(0, 128, 0, 0.712);
   color: white;
   border: none;
-  font-size: 15px;
+  font-size: 18.5px;
 }
 
 input,
 button {
-  border-radius: 5px;
+  border-radius: 7px;
   border: 1px solid rgb(102, 102, 102);
 }
 

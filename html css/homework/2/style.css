@@ -1,13 +1,13 @@
 h1 {
     font-style: Klavika;
-    font-size: 30px;
+    font-size: 37.5px;
     color: blue;
-    margin-left: 80px;
-    margin-top: 300px;
+    margin-left: 100px;
+    margin-top:375px;
 }
 
 p {
-    margin-left: 80px;
+    margin-left: 100px;
 }
 
 body {
@@ -17,28 +17,28 @@ body {
 input {
     width:80%;
     margin-left:10%;
-    height: 40px;
-    margin-top:30px;
+    height: 50px;
+    margin-top:37.5px;
 }
 
 .sifra {
-    margin-top: 15px;;
+    margin-top: 19px;;
 }
 
 div {
     width:30%;
-    height:375px;
-    margin-right:90px;
+    height:468px;
+    margin-right:112.5px;
     background-color: white;
     float: right;
-    margin-top:-220px;
+    margin-top:-275px;
 }
 
 button {
     width: 80%;
     margin-left:10%;
-    height: 40px;
-    margin-top:15px;
+    height: 50px;
+    margin-top:19px;
     font-weight: bold;
     background-color: blue;
     border: none;

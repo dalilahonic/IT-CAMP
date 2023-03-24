@@ -7,7 +7,7 @@ header {
   flex-direction: row;
 }
 div.headerDiv {
-  height: 80px;
+  height: 100px;
   width: 50%;
   background-color: #5050df;
   display: flex;
@@ -16,22 +16,22 @@ div.headerDiv {
 
 .headerDiv h1 {
   color: white;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 div.headerDivRight {
   width: 50%;
-  height: 80px;
+  height: 100px;
   background-color: #5050df;
   display: flex;
   align-items: center;
-  gap: 30px;
-  font-size: 25px;
+  gap: 37.5px;
+  font-size: 31px;
 }
 
 .headerDivRight a {
   text-decoration: none;
-  margin-left: 15px;
+  margin-left: 19px;
   color: white;
 }
 
@@ -40,14 +40,14 @@ div.headerDivRight {
   flex-direction: ;
   align-items: center;
   background-color: white;
-  height: 553px;
+  height: 691px;
 }
 
 div.leftMain {
   background-color: rgb(35, 35, 120);
   width: 30%;
-  height: 430px;
-  margin-left: 35px;
+  height: 537.5px;
+  margin-left: 43px;
   display: flex;
   flex-direction: column;
 }
@@ -70,14 +70,14 @@ div.headerOfMain {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 21px;
+  gap: 26px;
 }
 
 .mainOfMain a {
-  font-size: 20px;
+  font-size: 31px;
   text-decoration: none;
   color: white;
-  margin-top: 25px;
+  margin-top: 31px;
 }
 
 .mainOfMain a:hover {
@@ -85,17 +85,17 @@ div.headerOfMain {
 }
 
 .rightMain h1 {
-  margin-left: 20px;
+  margin-left: 25px;
   color: #5050df;
-  line-height: 60px;
-  font-size: 70px;
+  line-height: 75px;
+  font-size: 87.5px;
   margin-bottom: 0;
 }
 
 .rightMain h2 {
   color: white;
-  font-size: 70px;
-  margin-left: 20px;
+  font-size: 87.5px;
+  margin-left: 25px;
   background-color: #5050df;
-  margin-top: 10px;
+  margin-top: 12.5px;
 }
