@@ -137,7 +137,7 @@ body {
 
 .divOnTheLeft {
   width: 33%;
-  height: 208px;
+  height: 366px;
   background-color: rgb(255, 250, 245);
 }
 
@@ -164,7 +164,7 @@ body {
 
 .divInTheCenter {
   width: 34%;
-  height: 208px;
+  height: 366px;
   background-color: rgba(202, 24, 164, 0.826);
 }
 
@@ -194,7 +194,7 @@ body {
 
 .divOnTheRight {
   width: 33%;
-  height: 208px;
+  height: 366px;
   background-color: black;
 }
 
@@ -208,7 +208,7 @@ body {
 }
 
 .divOnTheRight h1 {
-  font-size: 25px;
+  font-size: 25pxpx;
   margin-top: 0;
   margin-left: 37px;
   font-weight: 400;

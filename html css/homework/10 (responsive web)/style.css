@@ -409,7 +409,7 @@ a.logoLink:hover {
 }
 
 .navigation a:hover {
-  color: #f6d44f;
+  color: #f6d44b;;
 }
 
 div.homeoffice {
@@ -504,7 +504,7 @@ div.information a {
 }
 
 .information a:hover {
-  color: #f6d44f;
+  color: #f6d44b;
 }
 
 div.copyright {
@@ -533,11 +533,16 @@ div.copyright {
   padding: 0px 2%;
   border-right: 2px solid white;
   text-decoration: underline;
-  color: #e5cc63;
+  color: #f6d44b;;
 }
 
 .franc {
   padding: 0px 2%;
+}
+
+.en, .franc {
+  font-weight: 600;
+  font-size: 16px;
 }
 
 .en:hover, .franc:hover {
