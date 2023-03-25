@@ -1,0 +1,188 @@
+@media only screen and (max-width: 768px) {
+  .rightHeader a,
+  .rightHeader button {
+    display: none;
+  }
+
+  div.findYourWay {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 70%;
+    height: 500px;
+  }
+
+  div.text {
+    top: 10%;
+    left: 6%;
+    right: 5%;
+  }
+
+  div.text h1 {
+    font-size: 48px;
+    margin-right: 0;
+  }
+
+  div.icons {
+    height: 600px;
+  }
+
+  div.iconDiv h3 {
+    font-size: 18px;
+  }
+
+  div.iconDiv p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  div.iconDiv i {
+    font-size: 50px;
+  }
+
+  .iconDiv button {
+    margin-left: 0%;
+  }
+
+  .discoverMore button, .iconDiv button {
+    width: 100px;
+    height: 35px;
+    font-size: 10px;
+  }
+
+  .lastContainer button {
+    font-size: 11px;
+    width: 180px;
+    height: 35px;
+
+  }
+
+  div.disclaimer {
+    top: -180px;
+    margin: 0% 13%;
+    line-height: 20px;
+    font-size: 15px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .strategies h1 {
+    margin-top: -30px;
+  }
+
+  .strategies p {
+    margin: 0% 7%;
+    font-size: 18px;
+  }
+
+  div.companiesUs,
+  div.companiesCanada {
+    gap: 7%;
+    height: 140px;
+  }
+
+  .discoverMore p {
+    margin: 30px 4%;
+    line-height: 20px;
+  }
+
+ div.container {
+    flex-direction: column;
+ }
+
+  div.buildBusiness, div.businessPhoto {
+    width: 100%;
+    height: 600px;
+  }
+
+  div.buildBusiness {
+    padding: 5% 4%;
+  }
+
+  div.buildBusiness h1 {
+    font-size: 48px;
+  }
+
+  div.buildBusiness p {
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+
+  div.lastContainer img {
+    width: 350px;
+    margin-top: 60px;
+  }
+
+  div.lastContainer h1 {
+    font-size: 45px;
+  }
+
+  .lastContainer p {
+    font-size: 16px;
+  }
+
+  /* .....................FOOTER.................... */
+
+  .logoImage1 {order: 1;}
+  .button {order: 2;}
+  .navigation {order: 3;}
+  .homeoffice {order: 4;}
+  .iconContainer {order: 5;}
+  .information {order: 6;}
+  .copyright {order: 7;}
+  .language {order: 8};
+  .disclaimer1 {order: 9;}
+
+  .firstContainer{
+    display: block;
+  }
+
+  .logoImage1 {
+    height: 150px;
+    margin: 5% 1%;
+  }
+
+  .button {
+    margin: 0;
+    order: 2;
+    padding: 0;
+  }
+
+  .button1, .button2 {
+    margin-left: 2%;
+    margin-bottom: 10px;
+  }
+
+  .navigation {
+   height: 150px;
+   margin: auto 2%;
+  }
+
+  .navigation a {
+    margin: 1%;
+  }
+
+  div.homeoffice {
+    margin: 7% 3%;
+  }
+
+  .homeoffice p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .iconContainer {
+    justify-content: flex-start;
+    margin: 2% 3%;
+  }
+
+  .line {
+    visibility: hidden;
+  }
+
+  .information a {
+    font-size:13px ;
+  }
+
+}

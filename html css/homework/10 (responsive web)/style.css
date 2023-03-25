@@ -379,7 +379,7 @@ footer {
   overflow: hidden;
   background-color: #4a4a4a;
 }
-.logoImage {
+.logoImage1 {
   height: 100px;
   margin: 10% 20%;
   filter:invert(1%) sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%) contrast(80%);
@@ -573,3 +573,5 @@ div.disclaimer1 {
 .disclaimer1 p b {
   font-weight: 1000;
 }
+
+/* .........................END OF FOOTER...................... */
