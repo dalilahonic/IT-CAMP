@@ -1,0 +1,50 @@
+header.headerMain {
+    display: flex;
+}
+
+.leftHeader, .rightHeader {
+    width: 50%;
+    background-color: hsl(0, 59%, 57%);
+    height:60px;
+}
+
+.rightHeader  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2vw;
+}
+
+.rightHeader a {
+    text-decoration: none;
+    color: white;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.rightHeader a:hover {
+    color: rgb(74, 74, 178);
+}
+
+.leftHeader i {
+    display: none;
+}
+
+@media only screen and (max-width:768px) {
+    .rightHeader a {
+        display: none;
+    }
+
+    .leftHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftHeader i {
+        display: block;
+        font-size: 20px;
+    }
+
+}
