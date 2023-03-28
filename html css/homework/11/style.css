@@ -1,14 +1,23 @@
 body {
   margin: 0;
+  background-color: #e9e3fd;
 }
 
 header {
   display: flex;
 }
 
+:root {
+  --blue: #558ea8;
+  --cream: #ede9e6;
+  /* --button:#7065cd; */
+  --button: #4438be;
+  --letters: #020003;
+}
+
 .headerRight,
 .headerLeft {
-  background-color: blue;
+  background-color: var(--blue);
   height: 8vh;
   display: flex;
   align-items: center;
@@ -17,18 +26,33 @@ header {
 .headerLeft {
   width: 50%;
   padding-left: 3%;
+  font-family: Delicious Handrawn;
+  font-size: 35px;
+  color: var(--cream);
 }
 
 .headerRight {
   width: 50%;
+  font-family: Itim;
 }
 
 .headerRight a {
   text-decoration: none;
   font-size: 20px;
-  color: white;
+  color: var(--cream);
   margin: 2vw;
   transition: 1s;
+}
+
+.headerRight span {
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.headerRight .home:hover i {
+  display: none;
 }
 
 .headerLeft h2 {
@@ -37,106 +61,158 @@ header {
 }
 
 .headerRight a:hover {
-  color: rgb(0, 255, 0);
+  color: #bdb6a3;
 }
 
 .mainDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 91vh;
 }
 
 .card {
-    width: 60%;
-    height: 50vh;
-    background-color: firebrick;
-    position: absolute;
-    border-radius: 18px;
-    box-shadow: 10px 10px 50px grey;
+  width: 60%;
+  height: 50vh;
+  background-color: #fefefe;
+  position: absolute;
+  border-radius: 18px;
+  box-shadow: 10px 10px 50px grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .card img {
-    position: absolute;
-    top: 10%;
-    left:-7% ;
-    width: 30%;
-    height: 80%;
-    object-fit:cover;
-    border-radius: 20px;
+  position: absolute;
+  top: 10%;
+  left: -7%;
+  width: 30%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .card h1 {
-    margin: 8% 10% 0% 30%;
-    color: black;
-    font-size: 30px;
+  margin: 8% 10% 0% 30%;
+  font-size: 30px;
+  color: var(--letters);
 }
 
-.card h2, .card  p, .btn {
-    margin-left:30% ;
+.card h2,
+.card p,
+.btn {
+  margin-left: 30%;
 }
 
 .card p {
-    font-size: 18px;
-    margin-right: 10%;
+  font-size: 18px;
+  margin-right: 10%;
+  color: #020003;
+}
+
+.card h2 {
+  color: #020003;
 }
 
 .card button {
-    width: 40%;
-    background-color: darkblue;
-    height:14% ;
-    border-radius: 30px;
-    border: none;
-    color: white;
-    font-size: 16px;
+  width: 40%;
+  background-color: var(--button);
+  color: var(--cream);
+  height: 14%;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  font-size: 16px;
 }
 
-@media only screen and (max-width:900px) {
+button:hover,
+a {
+  cursor: pointer;
+}
 
-    .card img {
-        top: -10%;
-        left: 5%;
-        height: 50%;
-        width: 90%;
-    }
+div.forHome {
+  width: 100px;
+  height: 40%;
+  z-index: 2;
+  position: relative;
+}
 
-    .card {
-        height: 70vh;
-        width: 80%;
-        text-align: center;
-    }
+div.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 2;
+  background-color: hsl(245, 33%, 50%);
+  /* mora background color da se doda da bi se video div */
+  width: 100%;
+}
 
-    .card h1 {
-        position: relative;
-        top: 44%;
-        margin: 0% 10%;
-    }
+.dropdown a {
+  display: block;
+  /* mora display block da bi radila margina */
+  margin: 30% 30%;
+}
 
-    .card h2, .card p, .btn {
-        margin: 2.5% 10%  ;
-        position: relative;
-    }
+.forHome:hover .dropdown {
+  display: block;
+}
+@media only screen and (max-width: 1286px) and (min-width: 900px) {
+  .headerRight {
+    justify-content: flex-end;
+    width: 100%;
+  }
+}
 
-    .card h2 {
-        top: 44%;
-    }
+@media only screen and (max-width: 900px) {
+  .card img {
+    top: -10%;
+    left: 5%;
+    height: 50%;
+    width: 90%;
+  }
 
-    .card p {
-        top:44%;
-    }
+  .card {
+    height: 70vh;
+    width: 80%;
+    text-align: center;
+  }
 
-    .card button {
-        width:50%;
-        height:11%; 
-        top: 44%;
-    }
+  .card h1 {
+    position: relative;
+    top: 44%;
+    margin: 0% 10%;
+  }
 
-    @media only screen and (max-width:552px) {
+  .card h2,
+  .card p,
+  .btn {
+    margin: 2.5% 10%;
+    position: relative;
+  }
 
-        .card h1 {
-            
-        }
+  .card h2 {
+    top: 44%;
+  }
 
-        
-    }
+  .card p {
+    top: 44%;
+  }
+
+  .card button {
+    width: 50%;
+    height: 11%;
+    top: 44%;
+  }
+
+  .headerRight a {
+    display: none;
+  }
+
+  .headerRight {
+    display: none;
+  }
+
+  .headerLeft {
+    width: 100%;
+    justify-content: center;
+  }
 }
