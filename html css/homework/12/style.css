@@ -57,6 +57,28 @@ div.buttonNavigation {
   background-size: 50% 100%;
 }
 
+.buttonNavigation:hover {
+  animation: myAnimation 2s infinite;
+}
+
+@keyframes myAnimation {
+  25% {
+    filter: hue-rotate(90deg);
+  }
+
+  50% {
+    filter: hue-rotate(180deg);
+  }
+
+  75% {
+    filter: hue-rotate(270deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 .buttonNavigation a {
   position: relative;
   padding: 14px 0;
