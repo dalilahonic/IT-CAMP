@@ -58,7 +58,7 @@ div.buttonNavigation {
 }
 
 .buttonNavigation:hover {
-  animation: myAnimation 2s infinite;
+  animation: myAnimation 0.75s linear infinite;
 }
 
 @keyframes myAnimation {
