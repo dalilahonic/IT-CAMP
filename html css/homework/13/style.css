@@ -11,7 +11,8 @@ body {
 }
 
 :root {
-  --header: #0b6695;
+  --header: #3F6D69;
+  --footer: #3F3F3F;
 }
 
 .navLeft,
@@ -76,11 +77,12 @@ a {
   display: flex;
   align-items: center;
   gap: 7%;
-  color:#4b5c74;
+  color:var(--header);
 }
 
 .rightHeader a {
-  color: #4b5c74;
+  color:var(--header) ;
+  font-weight: 700;
 }
 
 main div {
@@ -137,13 +139,13 @@ div.inputSignUp input {
   border: none;
   color: var(--header);
   font-size: 20px;
-  font-weight: 540;
+  font-weight: 600;
 }
 
 .contactInformation {
   width: 100%;
   height: 38vh;
-  background-color: rgb(140, 147, 180);
+  background-color: #3F3F3F;
   display: flex;
   justify-content: flex-start;
   position: relative;
