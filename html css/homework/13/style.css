@@ -85,9 +85,19 @@ a {
   font-weight: 700;
 }
 
-main div {
-  height: 20vh;
+/* ................END OF HEADER.................... */
+
+.carousel-item {
+  height: 80vh;
+  width: 100%;
+  background-image:url(./img/mineralimage.jpg) ;
+  background-size: cover;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
 }
+
+
+/* .......................START OF FOOTER.............. */
 
 div.footer {
   width: 100%;
@@ -189,3 +199,6 @@ div.inputSignUp input {
 #instagramIcon, #facebookIcon {
   font-size: 44px;
 }
+
+
+
