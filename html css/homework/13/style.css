@@ -3,16 +3,31 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+  --header: #3F6D69;
+  --footer: #3F3F3F;
+}
+
+header a, footer a {
+text-decoration: none ;
+}
+
+header li, footer li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header ul, footer ul {
+  padding: 0;
+  margin: 0;
+}
+
 .nav {
   display: flex;
   width: 100%;
   background-color: var(--header);
   justify-content: center;
-}
-
-:root {
-  --header: #3F6D69;
-  --footer: #3F3F3F;
 }
 
 .navLeft,
@@ -24,14 +39,6 @@ body {
   align-items: center;
   color: white;
   font-size: 20px;
-}
-
-li {
-  list-style-type: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 .navLeft li,
@@ -90,12 +97,11 @@ a {
 .carousel-item {
   height: 80vh;
   width: 100%;
-  background-image:url(./img/mineralimage.jpg) ;
-  background-size: cover;
-  background-position: 0% 70%;
-  background-repeat: no-repeat;
 }
 
+.carousel-item img {
+  object-fit: cover;
+}
 
 /* .......................START OF FOOTER.............. */
 
