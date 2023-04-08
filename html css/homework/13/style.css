@@ -76,14 +76,22 @@ footer ul {
 
 .header {
   display: flex;
-  justify-content: flex-end;
-  background-color: hsl(180, 10%, 90%);
+  background-color: white;
+}
+
+.leftHeader {
+  width: 50%;
+}
+
+.leftHeader, .rightHeader {
+  box-shadow: 20px 4px 20px black;
+  z-index: 1;
 }
 
 .rightHeader {
   height: 12vh;
   width: 50%;
-  background-color: hsl(180, 10%, 90%);
+  background-color: white;
   display: flex;
   align-items: center;
   gap: 7%;
@@ -94,7 +102,6 @@ footer ul {
   color: var(--header);
   font-weight: 700;
 }
-
 /* ................END OF HEADER.................... */
 
 .carousel-item {
@@ -103,7 +110,7 @@ footer ul {
 }
 
 .carousel-item img {
-  height: 100% ;
+  height: 100%;
   width: 100%;
   object-fit: cover;
   object-position: 10% 65%;
@@ -111,28 +118,22 @@ footer ul {
 
 .contactUsContainer {
   width: 100%;
-  height: 110vh;
+  height: 120vh;
   background-color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.line {
-  width: 6%;
-  height: 40%;
-  border-top: 3px solid var(--header);
-  border-radius: 2px;
+  justify-content: right;
 }
 
 .contactUsText {
-  width: 30%;
+  width: 35%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-inline: 1% 5%;
+  padding-inline: 1% 7%;
+  box-sizing: border-box;
 }
 
 .contactUsText h1 {
@@ -140,6 +141,17 @@ footer ul {
   font-size: 60px;
   letter-spacing: 2px;
   font-weight: 1000;
+  position: relative;
+}
+
+.contactUsText h1::before {
+  position: absolute;
+  width: 25%;
+  height: 2.5px;
+  content: "";
+  background-color: var(--header);
+  top: 50%;
+  left: -30%;
 }
 
 .contactUsText p {
@@ -158,6 +170,13 @@ footer ul {
   outline: none;
   border: none;
   font-size: 22px;
+  margin: 10% 0;
+  transition: 1.5s;
+}
+
+.contactUsText button:hover {
+  background-color: white;
+  color: var(--header);
 }
 
 .contactUsImages {
@@ -169,21 +188,113 @@ footer ul {
 
 .contactUsImages img {
   position: absolute;
-  width: 10%;
-  height: 10%;
 }
 
 .contactUsImages img.firstImage {
   top: 20%;
   width: 50%;
-  height: auto;
+  height: 35%;
 }
 
 img.secondImage {
-  top: 20%;
+  top: 6%;
   right: 10%;
+  width: 35%;
+  height: 49%;
+  object-fit: cover;
+  object-position: 65%;
+}
+
+.thirdImage {
+  bottom: 8%;
+  width: 23%;
+  height: 35%;
+  object-fit: cover;
+  object-position: 60% ;
+}
+
+.forthImage {
+  width:62% ;
+  height: 30%;
+  object-fit: cover;
+  bottom: 13%;
+  right: 10%;
+}
+
+div.offer {
+  height: 130vh;
+  width: 100%;
+}
+
+.offerHeading {
+  height:20% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.offerHeading h1 {
+  font-size: 68px;
+  font-weight: 1000;
+  color: var(--header);
+}
+
+.offerHeading h1::before, .offerHeading h1::after {
+  position: absolute;
+  top: 50%;
+  height: 3px;
+  content: "";
+  background-color: var(--header);
+}
+
+h1::before {
+  left: 0;
   width: 30%;
-  height: auto;
+}
+
+h1::after {
+  right: 0;
+  width: 30%;
+}
+
+.offerImages {
+  height: 80%;
+  width: 100%;
+  padding-inline: 7%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offerBox{
+  width: 33%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  text-align: center;
+  color: var(--header);
+}
+
+.offerBox h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.offerBox p {
+  font-size: 20px;
+}
+
+.offerBox img {
+  object-fit:cover ;
+  width: 100%;
+  height: 100%;
+}
+
+.offerBox:nth-child(even) {
+  padding: 0 5%;
 }
 
 /* .......................START OF FOOTER.............. */
