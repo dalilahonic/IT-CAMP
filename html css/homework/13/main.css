@@ -5,7 +5,7 @@ body {
 
 :root {
   --header: #3f6d69;
-  --headerOpacity:hsla(175, 27%, 34%,0.8);
+  --headerOpacity: hsla(175, 27%, 34%, 0.8);
   --footer: #3f3f3f;
 }
 
@@ -84,13 +84,9 @@ footer ul {
 
 .leftHeader {
   width: 50%;
-}
-
-.leftHeader {
   display: flex;
   align-items: center;
 }
-
 .leftHeader a {
   margin-left: 18%;
 }
@@ -132,31 +128,32 @@ footer ul {
   color: white;
   cursor: pointer;
 }
+
 /* ................END OF HEADER.................... */
 
-.carousel-item {
+.carousel .carousel-item {
   height: 86vh;
   width: 100%;
   position: relative;
 }
 
-.carousel-item:first-of-type {
+.carousel .carousel-item:first-of-type {
   background-image: url(./img/mineral.jpg);
 }
 
-.carousel-item:nth-of-type(2) {
+.carousel .carousel-item:nth-of-type(2) {
   background-image: url(./img/asfaltmineralimage.jpg);
 }
 
-.carousel-item:nth-of-type(3) {
+.carousel .carousel-item:nth-of-type(3) {
   background-image: url(./img/mineraldoo.jpg);
 }
 
-.carousel-item:nth-of-type(4) {
+.carousel .carousel-item:nth-of-type(4) {
   background-image: url(./img/mineralisejemimage.jpg);
 }
 
-.carousel-item:nth-of-type(-n + 4) {
+.carousel .carousel-item:nth-of-type(-n + 4) {
   background-size: cover;
   background-position: 10% 65%;
 }
@@ -167,8 +164,7 @@ footer ul {
   position: absolute;
 }
 
-.carousel-item:first-of-type h1,
-.carousel-item:nth-of-type(3) h1 {
+.carousel-item:first-of-type h1 {
   top: 20%;
   left: 12%;
   color: white;
@@ -176,14 +172,8 @@ footer ul {
   font-size: 80px;
 }
 
-.carousel-item:first-of-type h1,
-.carousel-item:nth-of-type(3) h1 span{
+.carousel-item:first-of-type h1 {
   background-color: var(--headerOpacity);
-
-}
-
-.carousel-item:nth-of-type(3) h1 {
-  padding-inline: 0 40%;
 }
 
 .carousel-item:nth-of-type(2) h1 {
@@ -195,6 +185,32 @@ footer ul {
 }
 
 .carousel-item:nth-of-type(2) h1 span {
+  background-color: var(--headerOpacity);
+  padding-inline: 1%;
+}
+
+.carousel-item:nth-of-type(3) h1 {
+  top: 20%;
+  left: 12%;
+  color: white;
+  font-size: 80px;
+  padding-inline: 0 40%;
+}
+
+.carousel-item:nth-of-type(3) h1 span {
+  background-color: var(--headerOpacity);
+}
+
+.carousel-item:nth-of-type(4) h1 {
+  left: 12%;
+  top: 20%;
+  color: #154440;
+  font-size: 80px;
+  padding-inline: 0 50%;
+}
+
+.carousel-item:nth-of-type(4) h1 span {
+  color: white;
   background-color: var(--headerOpacity);
   padding-inline: 1%;
 }
@@ -219,8 +235,18 @@ footer ul {
   width: 34%;
 }
 
-.carousel-item:first-of-type button, 
-.carousel-item:nth-of-type(2) button {
+.carousel-item:nth-of-type(4) p {
+  top: 52%;
+  left: 12%;
+  color: #404847;
+  font-size: 22px;
+  font-weight: 600;
+  padding-inline: 0 50%;
+}
+
+.carousel-item:first-of-type button,
+.carousel-item:nth-of-type(2) button,
+.carousel-item:nth-of-type(4) button {
   width: 8%;
   height: 8%;
   border-radius: 8px;
@@ -234,7 +260,7 @@ footer ul {
 }
 
 .carousel-item:first-of-type button {
-  top:58% ;
+  top: 58%;
 }
 
 .carousel-item:nth-of-type(2) button {
@@ -254,7 +280,11 @@ footer ul {
   border: none;
 }
 
-.contactUsContainer {
+.carousel-item:nth-of-type(4) button {
+  top: 65%;
+}
+
+.aboutUsContainer {
   width: 100%;
   height: 120vh;
   background-color: white;
@@ -263,7 +293,7 @@ footer ul {
   justify-content: right;
 }
 
-.contactUsText {
+.aboutUsText {
   width: 35%;
   height: 100%;
   display: flex;
@@ -274,7 +304,7 @@ footer ul {
   box-sizing: border-box;
 }
 
-.contactUsText h1 {
+.aboutUsText h1 {
   color: var(--header);
   font-size: 60px;
   letter-spacing: 2px;
@@ -282,7 +312,7 @@ footer ul {
   position: relative;
 }
 
-.contactUsText h1::before {
+.aboutUsText h1::before {
   position: absolute;
   width: 25%;
   height: 2.5px;
@@ -292,14 +322,14 @@ footer ul {
   left: -30%;
 }
 
-.contactUsText p {
+.aboutUsText p {
   color: var(--header);
   font-size: 24px;
   font-weight: 350;
   color: var(--header);
 }
 
-.contactUsText button {
+.aboutUsText button {
   background-color: var(--header);
   color: white;
   width: 34%;
@@ -312,23 +342,27 @@ footer ul {
   transition: 1.5s;
 }
 
-.contactUsText button:hover {
+.aboutUsText button i {
+  font-size: 22px;
+}
+
+.aboutUsText button:hover {
   background-color: white;
   color: var(--header);
 }
 
-.contactUsImages {
+.aboutUsImages {
   width: 60%;
   height: 100%;
   background-color: white;
   position: relative;
 }
 
-.contactUsImages img {
+.aboutUsImages img {
   position: absolute;
 }
 
-.contactUsImages img.firstImage {
+.aboutUsImages img.firstImage {
   top: 20%;
   width: 50%;
   height: 35%;
@@ -486,7 +520,6 @@ div.newsAndEventsHeading h1 {
 .ourActivity #carouselExample {
   width: 50%;
   height: 70%;
-  background-color: firebrick;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -731,78 +764,142 @@ div.signUp h1 span {
 }
 
 div.inputSignUp input {
-  height: 36%;
-  width: 28%;
-  border: 2px solid white;
+  height: 46%;
+  width: 36%;
+  border: 1px solid white;
   outline: none;
   background-color: transparent;
   box-sizing: border-box;
   padding-left: 1%;
   color: white;
-}
-
-::placeholder {
-  color: white;
-}
-
-.inputSignUp button {
-  height: 36%;
-  width: 15%;
-  background-color: white;
-  border: none;
-  color: var(--header);
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.contactInformation {
-  width: 100%;
-  height: 38vh;
-  background-color: var(--footer);
-  display: flex;
-  justify-content: center;
-}
-
-.contact {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 10%;
-}
-
-.contactHeader {
-  height: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.contact a,
-.contact h3 {
-  color: white;
-  font-size: 20px;
-}
-
-.contactList {
-  height: 70%;
-}
-
-.contactList ul {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10%;
-}
-
-.contact i {
-  color: var(--header);
   font-size: 24px;
 }
 
-#instagramIcon,
-#facebookIcon {
-  font-size: 44px;
+::placeholder {
+  color: #d4d1d1;
+  font-weight: 700;
+}
+
+.inputSignUp button {
+  height: 46%;
+  width: 17%;
+  background-color: white;
+  border: none;
+  color: var(--header);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footerContainer {
+  height: 50vh;
+  display: flex;
+  padding-top: 4%;
+  gap: 2%;
+  background-color: var(--footer);
+}
+
+.contactFooter {
+  height: 100%;
+  width: 22%;
+}
+
+.contactFooter img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.contactFooter:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactFooter h1 {
+  width: 100%;
+  height: 30%;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 26px;
+}
+
+.contactFooter ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  box-sizing: border-box;
+}
+
+.contactFooter li,
+.contactFooter li a {
+  font-size: 22px;
+  color: white;
+  transition: 0.5s;
+}
+
+.contactFooter a:hover {
+  color: var(--header);
+}
+
+.contactFooter:nth-of-type(2) ul,
+.contactFooter:nth-of-type(3) ul {
+  gap: 10%;
+}
+
+.contactFooter:nth-of-type(4) ul {
+  display: flex;
+  padding: 0;
+  gap: 10%;
+  align-self: center;
+  height: 80%;
+}
+
+.contactFooter:nth-of-type(4) {
+  display: flex;
+}
+
+.contactFooter:nth-of-type(3) ul {
+  gap: 20%;
+}
+
+.contactFooter i {
+  font-size: 20px;
+  width: 12%;
+  height: 120%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  background-color: var(--header);
+  background-color: #406966;
+  margin-right: 2%;
+}
+
+.contactFooter #facebookIcon,
+.contactFooter #instagramIcon {
+  font-size: 60px;
+  padding-inline: 12%;
+  box-sizing: border-box;
+}
+
+#instagramIcon {
+  margin-right: 10%;
+}
+
+.contactFooter li {
+  display: flex;
+}
+
+.contactFooter h2 {
+  font-size: 24px;
 }
