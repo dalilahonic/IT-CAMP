@@ -4,23 +4,23 @@
   position: relative;
 }
 
-.carousel .carousel-item:first-of-type {
+.firstCarousel .carousel-item:first-of-type {
   background-image: url(./img/mineral.jpg);
 }
 
-.carousel .carousel-item:nth-of-type(2) {
+.firstCarousel .carousel-item:nth-of-type(2) {
   background-image: url(./img/asfaltmineralimage.jpg);
 }
 
-.carousel .carousel-item:nth-of-type(3) {
+.firstCarousel .carousel-item:nth-of-type(3) {
   background-image: url(./img/mineraldoo.jpg);
 }
 
-.carousel .carousel-item:nth-of-type(4) {
+.firstCarousel .carousel-item:nth-of-type(4) {
   background-image: url(./img/mineralisejemimage.jpg);
 }
 
-.carousel .carousel-item:nth-of-type(-n + 4) {
+.firstCarousel .carousel-item:nth-of-type(-n + 4) {
   background-size: cover;
   background-position: 10% 65%;
 }
