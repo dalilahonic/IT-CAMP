@@ -384,7 +384,7 @@ div.newsAndEventsHeading h1 {
   position: relative;
 }
 
-.ourActivity #carouselExample {
+.ourActivity #carouselExample2 {
   width: 50%;
   height: 70%;
   position: absolute;
@@ -401,7 +401,7 @@ div.newsAndEventsHeading h1 {
   height: 100%;
 }
 
-.ourActivity #carouselExample .carousel-item img {
+.ourActivity #carouselExample2 .carousel-item img {
   object-fit: cover;
 }
 
