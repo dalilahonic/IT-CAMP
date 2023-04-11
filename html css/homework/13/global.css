@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -9,6 +8,10 @@ body {
   --footer: #3f3f3f;
   --footer2: #8d8d8d;
   font-size: 4px;
+}
+
+:root *:not(i) {
+  font-family: Poppins, sans-serif;
 }
 
 header a,
@@ -130,6 +133,10 @@ footer ul {
   cursor: pointer;
 }
 
+/* ...........LOCATION CARDS */
+
+
+
 /* .......................FOOTER....................... */
 
 div.footer {
@@ -199,7 +206,7 @@ footer ::placeholder {
   gap: 2%;
 }
 
-/* FOR HOME PAGE.... */
+/* FOR HOME PAGE....   */
 
 .footerContainer {
   background-color: var(--footer);
@@ -291,7 +298,7 @@ footer ::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 16px;
   transition: 0.5s;
   background-color: var(--header);
   background-color: #406966;
