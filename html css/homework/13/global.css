@@ -323,3 +323,21 @@ footer ::placeholder {
 .contactFooter h2 {
   font-size: 6rem;
 }
+
+@media only screen and (max-width:1200px) {
+
+    .contactFooter:nth-of-type(2) {
+    width: 28%;
+  }
+
+  .contactFooter i {
+    height: 110%;
+  }
+
+  .contactFooter #facebookIcon,
+.contactFooter #instagramIcon {
+  width: 30%;
+  height: 120%;
+}
+
+}

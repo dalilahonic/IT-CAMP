@@ -73,7 +73,7 @@
   top: 20%;
   color: #154440;
   font-size: 20rem;
-  padding-inline: 0 50%;
+  padding-inline: 0 40%;
 }
 
 .carousel-item:nth-of-type(4) h1 span {
@@ -89,7 +89,7 @@
   color: white;
   font-size: 5.5rem;
   font-weight: 600;
-}
+} 
 
 .carousel-item:first-of-type p {
   top: 40%;
@@ -651,4 +651,36 @@ div.buildings img {
 
 .locations p {
   font-size: 5rem;
+}
+
+/* ...........RESPONSIVE.................... */
+
+@media only screen and (max-width:1200px) {
+
+  .offerHeading h1::after,
+  .newsAndEvents h1::after {
+    width: 24%;
+  }
+
+  .offerHeading h1::before,
+.newsAndEventsHeading h1::before {
+  width: 24%;
+}
+
+.carousel-item:nth-of-type(2) h1 {
+  padding-inline: 0 10%;
+}
+
+.carousel-item:nth-of-type(3) h1 {
+  padding-inline: 0 10%;
+}
+
+.carousel-item:nth-of-type(4) h1 {
+  padding-inline: 0 30%;
+}
+
+.carousel-item:nth-of-type(4) button {
+  top: 70%;
+}
+
 }

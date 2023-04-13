@@ -16,7 +16,7 @@ div.mainImageContainer {
 div.cezlak, 
 div.lesnoBrdo {
     height: 70vh;
-    width: 44%;
+    width: 50%;
     background-color: var(--header);
     margin-bottom: 10px;
     position: relative;
@@ -34,21 +34,27 @@ div.cezlak {
 
 div.lesnoBrdo {
     left: 10%;
-    padding: 5% 14% 5% 5%;
+    padding: 5% 9% 5% 5%;
+}
+
+div.lesnoBrdo img {
+    width:80% ;
+    height: 80%;
+    object-fit: cover;
 }
 
 div.cezlak img {
     position: absolute;
-    left: -80%;
+    left: -64%;
     top: 50%;
     transform: translateY(-50%);
     height: 80%;
-    width: 100%;
+    width: 80%;
 }
 
 div.lesnoBrdo img {
     position: absolute;
-    right: -80%;
+    right: -64%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -92,4 +98,18 @@ div.podpec h1 {
     right:38% ;
     z-index: 1;
     font-weight: 400;
+}
+
+@media only screen and (max-width:1200px) {
+
+    div.cezlak h1,
+div.lesnoBrdo h1 {
+    font-size: 13rem;
+}
+
+div.cezlak p, 
+div.lesnoBrdo p  {
+    font-size: 5.8rem;
+}
+    
 }
