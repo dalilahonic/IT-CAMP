@@ -207,3 +207,33 @@ form.mainForm {
         transform: translateX(14%);
     }
   }
+
+  @media only screen and (max-width:1070px) {
+
+    .officesLocations h1::after {
+        left: 29%;
+    }
+ 
+    /* .locationsCards {
+        flex-wrap: wrap;
+    }
+
+    .locations {
+       width: 27%;
+       height:60%;
+    } */
+
+  }
+  
+  @media only screen and (max-width:990px) {
+
+    .mainForm input {
+        width: 100%;
+        margin-bottom:2% ;
+    }
+
+    .mainForm textarea {
+        margin-top: 0;
+        height: 70%;
+    }
+  }

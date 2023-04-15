@@ -114,6 +114,7 @@ footer ul {
   color: var(--header);
   font-weight: 1000;
   font-size: 4rem;
+  white-space:nowrap;
 }
 
 .rightHeader i {
@@ -222,7 +223,6 @@ footer ::placeholder {
   height: 100%;
   width: 22%;
 }
-
 .contactFooter img {
   width: 70%;
   height: 70%;
@@ -270,15 +270,13 @@ footer ::placeholder {
   color: var(--header);
 }
 
-.contactFooter:nth-of-type(2) ul,
-.contactFooter:nth-of-type(3) ul {
+.contactFooter ul {
   gap: 10%;
 }
 
 .contactFooter:nth-of-type(4) ul {
   display: flex;
   padding: 0;
-  gap: 10%;
   align-self: center;
   height: 80%;
 }
@@ -322,6 +320,7 @@ footer ::placeholder {
 
 .contactFooter h2 {
   font-size: 6rem;
+  margin-top: 0;
 }
 
 @media only screen and (max-width:1200px) {
@@ -340,4 +339,93 @@ footer ::placeholder {
   height: 120%;
 }
 
+.inputSignUp button {
+  font-size: 5rem;
+}
+
+.rightHeader {
+  width: 70%;
+  justify-content: flex-end;
+}
+
+.leftHeader {
+  width: 30%;
+}
+}
+
+@media only screen and (max-width:1070px) {
+ :root {
+    font-size: 3.7px;
+  }
+
+  div.inputSignUp input {
+    width: 56% ;
+  }
+
+  .inputSignUp button {
+    width: 24%;
+  }
+}
+
+@media only screen and (max-width:990px) {
+  .contactFooter li,
+  .contactFooter li a {
+    font-size: 5rem;
+  }
+
+  .contactFooter h2 {
+   font-size: 5rem;
+  }
+
+.footerBox {
+  display: flex;
+  flex-wrap: wrap;
+  height: 75vh;
+}
+
+.contactFooter {
+  width: 49%;
+  height: 33.3333%;
+}
+.contactFooter:nth-of-type(4) ul {
+  padding-left:40.5px ;
+  align-self: ;
+}
+
+.contactFooter #facebookIcon,
+.contactFooter #instagramIcon {
+  font-size: 10rem;
+  padding-inline: 0;
+  width: 26%;
+}
+
+#instagramIcon {
+  margin-right: 8%;
+}
+
+.contactFooter:nth-of-type(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactFooter:nth-of-type(3) ul {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(12%);
+}
+
+.contactFooter:nth-of-type(3) h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.contactFooter:nth-of-type(3) ul li {
+  width: 100%;
+}
+
+.contactFooter ul {
+  gap: 20%
+}
 }
