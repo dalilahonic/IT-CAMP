@@ -1,0 +1,51 @@
+@media only screen and (max-width: 400px) {
+  div.register h1 {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .information h1 {
+    font-size: 26px;
+  }
+
+  .inputContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputContainer input {
+    margin-bottom: 8%;
+    height: 6vh;
+    border-radius: 3px;
+    width: 100%;
+    width: 90%;
+    display: block;
+    margin-inline: auto;
+    padding-left: 10%;
+    position: relative;
+  }
+
+  .inputContainer i {
+    position: absolute;
+    top: 18%;
+    left: 5%;
+  }
+
+  .inputContainer input:nth-of-type(6) {
+    margin-bottom: 20%;
+  }
+
+  input:hover {
+    border: 2px solid purple;
+    outline: 2px solid purple;
+  }
+
+  .inputContainer button {
+    border-radius: 3px;
+    height: 6vh;
+    outline: none;
+    border: none;
+    background-color: orangered;
+    color: white;
+  }
+}
