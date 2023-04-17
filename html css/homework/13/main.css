@@ -25,6 +25,19 @@
   background-position: 10% 65%;
 }
 
+.firstCarousel .carousel-item {
+  animation: opacity 1.5s;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .carousel-item h1,
 .carousel-item p,
 .carousel-item button {
@@ -41,7 +54,21 @@
 
 .carousel-item:first-of-type h1 {
   background-color: var(--headerOpacity);
+  position: absolute;
+  animation: move3 1s;
+  animation-delay: 0.2s;
 }
+
+@keyframes move3 {
+from {
+  transform: translate(34%, 100%);
+}
+
+to {
+  transform:translateX(0) ;
+}
+}
+
 
 .carousel-item:nth-of-type(2) h1 {
   color: white;
@@ -51,9 +78,23 @@
   padding-inline: 0 30%;
 }
 
+
 .carousel-item:nth-of-type(2) h1 span {
   background-color: var(--headerOpacity);
   padding-inline: 1%;
+  position: absolute;
+  animation: move 1s;
+  animation-delay: 0.2s;
+}
+
+@keyframes move {
+from {
+  transform: translate(-34%, -100%);
+}
+
+to {
+  transform:translate(0) ;
+}
 }
 
 .carousel-item:nth-of-type(3) h1 {
@@ -66,6 +107,19 @@
 
 .carousel-item:nth-of-type(3) h1 span {
   background-color: var(--headerOpacity);
+  position: absolute;
+  animation: move2 1s;
+  animation-delay: 0.2s;
+}
+
+@keyframes move2 {
+from {
+  transform: translate(-10%, 30%);
+}
+
+to {
+  transform:translate(0) ;
+}
 }
 
 .carousel-item:nth-of-type(4) h1 {
@@ -80,6 +134,19 @@
   color: white;
   background-color: var(--headerOpacity);
   padding-inline: 1%;
+  position: absolute;
+  animation: move4 1s;
+  animation-delay: 0.2s;
+}
+
+@keyframes move4 {
+from {
+  transform: translate(10%, 20%);
+}
+
+to {
+  transform:translateX(0) ;
+}
 }
 
 .carousel-item:first-of-type p,
@@ -196,6 +263,8 @@
   letter-spacing: 2px;
   font-weight: 1000;
   position: relative;
+  animation: heading 2s;
+  scroll-snap-align:50vh;
 }
 
 .aboutUsText h1::before {
@@ -212,7 +281,6 @@
   color: var(--header);
   font-size: 6rem;
   font-weight: 350;
-  color: var(--header);
 }
 
 .aboutUsText button {
