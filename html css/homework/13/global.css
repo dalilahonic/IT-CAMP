@@ -7,10 +7,11 @@ body {
   --headerOpacity: hsla(175, 27%, 34%, 0.8);
   --footer: #3f3f3f;
   --footer2: #8d8d8d;
+  --button: #154440;
   font-size: 4px;
 }
 
-:root *:not(i) {
+*:not(i) {
   font-family: Poppins, sans-serif;
 }
 
@@ -33,8 +34,7 @@ footer ul {
   justify-content: center;
 }
 
-.navLeft,
-.navRight {
+.navContainer {
   background-color: var(--header);
   width: 40%;
   height: 8vh;
@@ -44,37 +44,32 @@ footer ul {
   font-size: 4.5rem;
 }
 
-.navLeft li,
-.navRight li {
+.navContainer li {
   display: inline;
 }
 
-.navRight i {
+.navContainer i{
   color: white;
 }
 
-.navRight {
+#navRight {
   justify-content: flex-end;
 }
 
-.navRight ul {
+#navRight ul {
   display: flex;
   gap: 20%;
 }
 
-.navLeft ul {
-  padding: 0;
-}
-
-.navRight ul a {
+#navRight ul a {
   color: white;
 }
 
-.navRight li:first-child {
+#navRight li:first-child {
   position: relative;
 }
 
-.navRight li:first-child::after {
+#navRight li:first-child::after {
   position: absolute;
   content: "";
   width: 2%;
@@ -91,33 +86,31 @@ footer ul {
   position: relative;
 }
 
-.leftHeader {
+.headerContainer {
   width: 50%;
   display: flex;
   align-items: center;
+  background-color: white;
 }
-.leftHeader a {
+
+#leftHeader a {
   margin-left: 18%;
 }
 
-.rightHeader {
+#rightHeader {
   height: 12vh;
-  width: 50%;
-  background-color: white;
-  display: flex;
-  align-items: center;
   gap: 7%;
   color: var(--header);
 }
 
-.rightHeader a {
+#rightHeader a {
   color: var(--header);
   font-weight: 1000;
   font-size: 4rem;
   white-space:nowrap;
 }
 
-.rightHeader i {
+#rightHeader i {
   font-size: 5rem;
   width: 5%;
   height: 40%;
@@ -128,7 +121,7 @@ footer ul {
   transition: 0.5s;
 }
 
-.rightHeader i:hover {
+#rightHeader i:hover {
   background-color: var(--header);
   color: white;
   cursor: pointer;

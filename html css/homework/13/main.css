@@ -40,21 +40,25 @@
 
 .carousel-item h1,
 .carousel-item p,
-.carousel-item button {
+.carousel-item button,
+.carousel-item h1 span {
   position: absolute;
+}
+
+.carousel-item h1 {
+  color: white;
+  font-size: 20rem;
+}
+
+.carousel-item h1 span {
+  background-color: var(--headerOpacity);
 }
 
 .carousel-item:first-of-type h1 {
   top: 20%;
   left: 12%;
-  color: white;
   padding-inline: 1%;
-  font-size: 20rem;
-}
-
-.carousel-item:first-of-type h1 {
   background-color: var(--headerOpacity);
-  position: absolute;
   animation: move3 1s;
   animation-delay: 0.2s;
 }
@@ -65,23 +69,18 @@ from {
 }
 
 to {
-  transform:translateX(0) ;
+  transform:translate(0) ;
 }
 }
 
 .carousel-item:nth-of-type(2) h1 {
-  color: white;
-  font-size: 20rem;
   left: 12%;
   top: 20%;
   padding-inline: 0 30%;
 }
 
-
 .carousel-item:nth-of-type(2) h1 span {
-  background-color: var(--headerOpacity);
   padding-inline: 1%;
-  position: absolute;
   animation: move 1s;
   animation-delay: 0.2s;
 }
@@ -99,14 +98,10 @@ to {
 .carousel-item:nth-of-type(3) h1 {
   top: 20%;
   left: 12%;
-  color: white;
-  font-size: 20rem;
   padding-inline: 0 40%;
 }
 
 .carousel-item:nth-of-type(3) h1 span {
-  background-color: var(--headerOpacity);
-  position: absolute;
   animation: move2 1s;
   animation-delay: 0.2s;
 }
@@ -124,16 +119,13 @@ to {
 .carousel-item:nth-of-type(4) h1 {
   left: 12%;
   top: 20%;
-  color: #154440;
-  font-size: 20rem;
+  color: var(--button);
   padding-inline: 0 40%;
 }
 
 .carousel-item:nth-of-type(4) h1 span {
   color: white;
-  background-color: var(--headerOpacity);
   padding-inline: 1%;
-  position: absolute;
   animation: move4 1s;
   animation-delay: 0.2s;
 }
@@ -183,7 +175,7 @@ to {
   width: 8%;
   height: 8%;
   border-radius: 8px;
-  background-color: #154440;
+  background-color: var(--button);
   color: white;
   font-size: 5rem;
   outline: none;
@@ -224,8 +216,8 @@ to {
 
 #carouselExample button.carousel-control-prev,
 #carouselExample button.carousel-control-next {
-  width: 6%;
-  height: 12%;
+  width: 11vh;
+  height: 11vh;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -262,8 +254,6 @@ to {
   letter-spacing: 2px;
   font-weight: 1000;
   position: relative;
-  animation: heading 2s;
-  scroll-snap-align:50vh;
 }
 
 .aboutUsText h1::before {
@@ -494,24 +484,25 @@ div.newsAndEventsHeading h1 {
 #carouselExample2 .carousel-control-prev-icon,
 #carouselExample2 .carousel-control-next-icon {
   transform: scale(3);
-  width: 27%;
-  height: 7%;
+  width: 1.5vh;
+  height: 1.5vh;
   border-radius: 50%;
   background-color: #9A9A9A;
   transition: 0.5s;
+  position: absolute;
 }
 
 #carouselExample2 .carousel-control-next-icon {
-  right: -14%;
+  right: 0;
 }
 
 #carouselExample2 .carousel-control-prev-icon {
-  left: 14%;
+  left:0;
 }
 
 #carouselExample2 button.carousel-control-prev,
 #carouselExample2 button.carousel-control-next {
-  width: 10%;
+  width: 20%;
   height: 50%;
   position: absolute;
   top: 50%; 
@@ -539,44 +530,25 @@ div.newsAndEventsHeading h1 {
   padding-right: 10%;
 }
 
-.ourActivityContainer p:first-child {
+.ourActivityContainer p:first-of-type {
+  top: 25%;
   font-size: 5.5rem;
 }
 
-.ourActivityContainer p:first-of-type {
-  top: 25%;
-}
-
-.ourActivityContainer h1:first-of-type {
-  top: 45%;
-}
-
-.ourActivityContainer h1:nth-of-type(3) {
-  top: 45%;
-}
-
-.ourActivityContainer p:nth-of-type(2) {
+.ourActivityContainer p:nth-of-type(even) {
   top: 54%;
 }
 
-.ourActivityContainer p:nth-of-type(4) {
-  top: 54%;
-}
-
-.ourActivityContainer h1:nth-of-type(2) {
-  top: 68%;
-}
-
-.ourActivityContainer h1:nth-of-type(4) {
-  top: 68%;
-}
-
-.ourActivityContainer p:nth-of-type(3) {
+.ourActivityContainer p:nth-of-type(3), .ourActivityContainer p:nth-of-type(5) {
   top: 77%;
 }
 
-.ourActivityContainer p:nth-of-type(5) {
-  top: 77%;
+.ourActivityContainer h1:nth-of-type(odd){
+  top: 45%;
+}
+
+.ourActivityContainer h1:nth-of-type(even) {
+  top: 68%;
 }
 
 .ourActivityContainer p:nth-of-type(-n + 3),
