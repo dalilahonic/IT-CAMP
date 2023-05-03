@@ -91,7 +91,7 @@ from {
 }
 
 to {
-  transform:translate(0) ;
+    transform:translate(0) ;
 }
 }
 
@@ -303,6 +303,7 @@ to {
 
 .aboutUsImages img {
   position: absolute;
+  object-fit: cover;
 }
 
 .aboutUsImages img.firstImage {
@@ -316,7 +317,6 @@ img.secondImage {
   right: 10%;
   width: 35%;
   height: 49%;
-  object-fit: cover;
   object-position: 65%;
 }
 
@@ -324,14 +324,12 @@ img.secondImage {
   bottom: 8%;
   width: 23%;
   height: 35%;
-  object-fit: cover;
   object-position: 60%;
 }
 
 .forthImage {
   width: 62%;
   height: 30%;
-  object-fit: cover;
   bottom: 13%;
   right: 10%;
 }
