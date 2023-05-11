@@ -788,12 +788,12 @@ div.buildings img {
   transition: 2s;
 }
 
-.slideAnimation:not(#carouselExample2) {
+.sliderAnimation:not(#carouselExample2) {
   transform: translate(0) !important ;
   opacity: 1 ;
 }
 
-.ourActivity #carouselExample2.slideAnimation {
+.ourActivity #carouselExample2.sliderAnimation {
   opacity: 1;
   left: -26%;
 }
