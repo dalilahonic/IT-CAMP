@@ -254,6 +254,7 @@ to {
   letter-spacing: 2px;
   font-weight: 1000;
   position: relative;
+  transform: translate(-100%, -50%);
 }
 
 .aboutUsText h1::before {
@@ -270,6 +271,8 @@ to {
   color: var(--header);
   font-size: 6rem;
   font-weight: 350;
+  transform: translate(-100%, 0%);
+  
 }
 
 .aboutUsText button {
@@ -282,7 +285,7 @@ to {
   border: none;
   font-size: 5.5rem;
   margin: 10% 0;
-  transition: 1.5s;
+  transform: translate(-160%, 50%);
 }
 
 .aboutUsText button i {
@@ -299,6 +302,7 @@ to {
   height: 100%;
   background-color: white;
   position: relative;
+  overflow: hidden;
 }
 
 .aboutUsImages img {
@@ -308,8 +312,9 @@ to {
 
 .aboutUsImages img.firstImage {
   top: 20%;
-  width: 50%;
+  width: 51%;
   height: 35%;
+  transform: translateY(-80%);
 }
 
 img.secondImage {
@@ -318,6 +323,7 @@ img.secondImage {
   width: 35%;
   height: 49%;
   object-position: 65%;
+  transform: translateX(50%);
 }
 
 .thirdImage {
@@ -325,6 +331,7 @@ img.secondImage {
   width: 23%;
   height: 35%;
   object-position: 60%;
+  transform: translateY(40%);
 }
 
 .forthImage {
@@ -332,6 +339,7 @@ img.secondImage {
   height: 30%;
   bottom: 13%;
   right: 10%;
+  transform: translateY(80%);
 }
 
 div.offer {
@@ -346,6 +354,7 @@ div.newsAndEventsHeading {
   align-items: center;
   justify-content: center;
   position: relative;
+  overflow-x:hidden ;
 }
 
 .offerHeading h1,
@@ -356,26 +365,22 @@ div.newsAndEventsHeading h1 {
 }
 
 .offerHeading h1::before,
-.offerHeading h1::after,
-.newsAndEventsHeading h1::before,
-.newsAndEventsHeading h1::after {
+.offerHeading h1::after {
   position: absolute;
   top: 50%;
-  height: 3px;
+  height: 2px;
   content: "";
   background-color: var(--header);
 }
 
-.offerHeading h1::before,
-.newsAndEventsHeading h1::before {
-  left: 0;
-  width: 30%;
+.offerHeading h1::before {
+  left: -110%;
+  width: 100%;
 }
 
-.offerHeading h1::after,
-.newsAndEventsHeading h1::after {
-  right: 0;
-  width: 30%;
+.offerHeading h1::after {
+  right: -110%;
+  width: 100%;
 }
 
 .offerImages {
@@ -417,6 +422,14 @@ div.newsAndEventsHeading h1 {
   padding: 0 5%;
 }
 
+.offerBox:nth-of-type(-n+3) {
+  transform: translateY(-100%);
+}
+
+.offerBox:nth-last-of-type(-n+3) {
+  transform: translateY(100%);
+}
+
 .buttonContainer {
   height: 20vh;
   width: 100%;
@@ -448,6 +461,7 @@ div.newsAndEventsHeading h1 {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  overflow-x: hidden;
 }
 
 .ourActivityContainer {
@@ -456,6 +470,7 @@ div.newsAndEventsHeading h1 {
   background-color: var(--header);
   margin-right: 5%;
   position: relative;
+  transform: translateX(50%);
 }
 
 .ourActivity #carouselExample2 {
@@ -464,12 +479,14 @@ div.newsAndEventsHeading h1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: -26%;
+  left: -200%;
 }
+
 .ourActivity div.carousel-inner {
   width: 100%;
   height: 100%;
 }
+
 .ourActivity .carousel-item {
   width: 100%;
   height: 100%;
@@ -559,12 +576,32 @@ div.newsAndEventsHeading h1 {
   left: 60%;
 }
 
+.newsAndEventsHeading h1::before,
+.newsAndEventsHeading h1::after {
+  position: absolute;
+  top: 50%;
+  height: 3px;
+  content: "";
+  background-color: var(--header);
+}
+
+.newsAndEventsHeading h1::before {
+  left: 0;
+  width: 28%;
+}
+
+.newsAndEventsHeading h1::after {
+  right: 0;
+  width: 28%;
+}
+
 .newsSubHeading h2 {
   text-align: center;
   color: var(--header);
   font-weight: 400;
   margin-top: -3%;
-  font-size: 6rem;
+  font-size: 7rem;
+  letter-spacing: 4px;
 }
 
 .newsAndEvents {
@@ -578,6 +615,7 @@ div.newsAndEventsHeading h1 {
   box-sizing: border-box;
   display: flex;
   gap: 3.33%;
+  overflow-x: hidden;
 }
 
 div.buildings {
@@ -588,6 +626,13 @@ div.buildings {
   color: var(--header);
 }
 
+.buildings:first-of-type {
+  transform: translateX(-80%);
+}
+
+.buildings:last-of-type {
+  transform: translateX(80%);
+}
 div.buildings img {
   width: 100%;
   height: 50%;
@@ -629,6 +674,7 @@ div.buildings img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow-x: hidden !important;
 }
 
 .otherLocationsHeading {
@@ -638,6 +684,7 @@ div.buildings img {
   align-items: center;
   justify-content: center;
   color: var(--header);
+  transform: translateY(-100%);
 }
 
 .otherLocationsHeading h1 {
@@ -671,6 +718,7 @@ div.buildings img {
   height: 100%;
   width: 100%;
   gap: 10%;
+  overflow-y: hidden;
 }
 
 .locations {
@@ -688,6 +736,18 @@ div.buildings img {
 
 .locations p {
   font-size: 5rem;
+}
+
+.locations:first-of-type {
+  transform: translateX(-100%);
+}
+
+.locations:nth-of-type(2) {
+  transform: translateY(100%);
+}
+
+.locations:last-of-type {
+  transform: translateX(100%);
 }
 
 /* ...........RESPONSIVE.................... */
@@ -719,4 +779,21 @@ div.buildings img {
 .carousel-item:nth-of-type(4) button {
   top: 70%;
 }
+}
+
+/* ...................ANIMACIJE...................... */
+
+.elementAnimation {
+  opacity: 0;
+  transition: 2s;
+}
+
+.slideAnimation:not(#carouselExample2) {
+  transform: translate(0) !important ;
+  opacity: 1 ;
+}
+
+.ourActivity #carouselExample2.slideAnimation {
+  opacity: 1;
+  left: -26%;
 }
