@@ -2,7 +2,6 @@ let imeKorisnika = 'Dalila'
 let PrezimeKorisnka = 'Honic'
 let sifraKorisnika = '123456'
 
-
 let ime = prompt('Unesite Ime');
 let prezime = prompt('Unesite Prezime');
 let password = prompt('Unesite sifru') 
