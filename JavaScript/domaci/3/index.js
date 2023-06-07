@@ -7,3 +7,4 @@ for (let i = 0; i < unos; i++) {
   niz[i] = vrednost;
 }
 console.log(niz);
+
