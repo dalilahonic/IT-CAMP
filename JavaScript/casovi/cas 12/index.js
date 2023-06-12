@@ -23,7 +23,7 @@ for (let i = 0; i < arr.length; i++) {
 //............
 
 let noviArr = ['amar', 'jasmin', 'dzelal', 'adis', 'dalila'];
-let prviDeo = [];
+let prviDeo = []
 let drugiDeo = [];
 let najnovijiNiz = [];
 
@@ -35,5 +35,4 @@ for (let i = 0; i < noviArr.length; i++) {
 
 console.log(prviDeo);
 console.log(drugiDeo);
-
 console.log(najnovijiNiz);
