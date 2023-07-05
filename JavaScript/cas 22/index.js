@@ -52,6 +52,14 @@ class Kuca {
   cenaKuce(cenaPoKvadratu) {
     return this.kvadratura * cenaPoKvadratu;
   }
+
+  vlasnikKuce() {
+    return this.vlasnik;
+  }
+
+  noviVlasnik(obj) {
+    return this.vlasnik = obj;
+  }
 }
 
 const kuca1 = new Kuca('crna', 20, true, 'Novi Pazar', {
@@ -61,3 +69,11 @@ const kuca1 = new Kuca('crna', 20, true, 'Novi Pazar', {
 
 console.log(kuca1);
 console.log(kuca1.cenaKuce(50));
+
+const nest = kuca1.vlasnikKuce();
+const cena = kuca1.cenaKuce(20);
+
+console.log(nest, cena);
+
+console.log(kuca1.noviVlasnik('Kaddir'));
+console.log(kuca1.vlasnik);
