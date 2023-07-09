@@ -12,7 +12,7 @@ class Zivotinja {
 
 class Macka extends Zivotinja {
     constructor(ime, tezina, starost, zivoti) {
-        super(ime, tezina, starost)
+        super(ime, tezina, starost) 
         this.zivoti = zivoti
     }
 
