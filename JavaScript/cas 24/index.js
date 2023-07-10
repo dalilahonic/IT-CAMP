@@ -61,7 +61,7 @@ console.log(banka1.proveriRacun(234));
 console.log(banka1.uplati(234, 20));
 console.log(banka1.isplati(234, 10));
 
-//...............................+
+//................................
 
 const testNasegZnanja =[
   {ime: 'Dzelal', prezime: 'Dupjlak', godine: 23 },
