@@ -60,3 +60,22 @@ console.log(banka1.ukupnoStanje());
 console.log(banka1.proveriRacun(234));
 console.log(banka1.uplati(234, 20));
 console.log(banka1.isplati(234, 10));
+
+//...............................+
+
+const testNasegZnanja =[
+  {ime: 'Dzelal', prezime: 'Dupjlak', godine: 23 },
+  {ime: 'Dalila', prezime: 'Honic', godine: 16 }
+]
+
+for(obj of testNasegZnanja) {
+  for(let [key, value] of Object.entries(obj)) {
+    if(key === 'godine' && value >= 18) {
+      obj.punoletan = true;
+    }  else if(key === 'godine' && value < 18) {
+      obj.punoletan = false
+    }
+  }
+}
+
+console.log(testNasegZnanja);
