@@ -1,0 +1,18 @@
+input {
+    height: 20px;
+    width: 200px;
+}
+
+.popUp {
+    display: none;
+    height: 300px;
+    width: 300px;
+    margin-inline: auto;
+    margin-block:50px;
+    background-color: red;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+
+}
