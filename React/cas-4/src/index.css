@@ -1,0 +1,10 @@
+* {
+  max-width: 100% !important;
+}
+
+div.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+  gap: 100px;
+}

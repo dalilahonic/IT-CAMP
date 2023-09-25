@@ -1,0 +1,39 @@
+div.main {
+  padding: 100px;
+  display: flex;
+  width: 80%;
+  height: 200px;
+  gap: 100px;
+}
+
+div.catergory {
+  width: 30%;
+  height: 200px;
+}
+
+div.category h1 {
+  margin-bottom: 5px;
+  font-size: 22px;
+}
+
+div.category h2 {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+div.rightContainer {
+  width: 70%;
+  height: 200px;
+}
+
+div.rightContainer button {
+  color: blue;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+button:hover {
+  cursor: pointer;
+}
