@@ -1,0 +1,37 @@
+.filterContainer {
+  flex-direction: column;
+  height: 300px;
+  width: 250px;
+  padding: 18px;
+  border: 0.1px solid rgba(146, 156, 165, 0.4);
+}
+
+.filterContainer label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+}
+
+div.options select {
+  width: 217px;
+  height: 36px;
+  border: 0.1px solid rgba(146, 156, 165, 0.4);
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+
+div.options select:hover {
+  cursor: pointer;
+}
+
+div.options select option {
+  font-size: 16px;
+}
+
+div.colorButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
