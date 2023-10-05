@@ -1,0 +1,12 @@
+div.codeContainer {
+  background-color: #f8f9fa;
+  height: 168px;
+  width: calc(250px + 568px);
+  position: absolute;
+  bottom: 51px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  padding-inline: 16px;
+}

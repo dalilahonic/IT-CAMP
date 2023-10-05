@@ -5,13 +5,23 @@
   font-family: sans-serif;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 div.main {
   height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
-button:hover {
-  cursor: pointer;
+.buttonContainer {
+  align-items: center;
+  justify-content: center;
+  width: 568px;
+  height: 300px;
+  border: 0.1px solid rgba(146, 156, 165, 0.4);
+  border-radius: 4px;
 }

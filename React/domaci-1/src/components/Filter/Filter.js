@@ -33,17 +33,18 @@ function Filter({
   onAddColor,
   onChangeOption,
   onChangeRange,
+  onChangeRadius,
 }) {
   function handleClickColor(btnColor) {
     onAddColor(btnColor);
   }
 
-  function handleChange(color) {
-    onChangeOption(color);
+  function handleChange(variant) {
+    onChangeOption(variant);
   }
 
-  function handleChangeInput(range) {
-    onChangeRange(range);
+  function handleChangeInput(range, inputClass) {
+    onChangeRange(range, inputClass);
   }
 
   return (
@@ -76,9 +77,15 @@ function Filter({
       </div>
       <div className={classes.rangeContainer}>
         <label>Size</label>
-        <RangeInput onChangeInput={handleChangeInput} />
+        <RangeInput
+          className='sizeRange'
+          onChangeInput={handleChangeInput}
+        />
         <label>Radius</label>
-        <RangeInput onChangeInput={handleChangeInput} />
+        <RangeInput
+          className='radiusRange'
+          onChangeInput={handleChangeInput}
+        />
       </div>
     </FlexContainer>
   );

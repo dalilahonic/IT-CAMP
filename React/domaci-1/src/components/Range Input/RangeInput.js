@@ -1,13 +1,16 @@
 import './RangeInput.module.css';
 
-function RangeInput({ onChangeInput }) {
-  function handleChange(range) {
-    onChangeInput(range);
+function RangeInput({ onChangeInput, className }) {
+  function handleChange(range, inputClass) {
+    onChangeInput(range, inputClass);
   }
 
   return (
     <input
-      onChange={(e) => handleChange(e.target.value)}
+      className={className}
+      onChange={(e) =>
+        handleChange(e.target.value, e.target.className)
+      }
       type='range'
       step='-5'
       min='1'

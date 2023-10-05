@@ -4,6 +4,7 @@
   width: 250px;
   padding: 18px;
   border: 0.1px solid rgba(146, 156, 165, 0.4);
+  border-radius: 4px;
 }
 
 .filterContainer label {
@@ -34,4 +35,3 @@ div.colorButtons {
   gap: 2px;
   margin-bottom: 10px;
 }
-
