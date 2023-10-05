@@ -30,10 +30,10 @@ function App() {
       <FlexContainer className='main'>
         <FlexContainer className='buttonContainer'>
           <Button
-            btnColor={currentBtnColor}
+            color={currentBtnColor}
             variant={variant}
-            sizeRange={sizeRange}
-            radiusRange={radiusRange}
+            size={sizeRange}
+            radius={radiusRange}
           />
         </FlexContainer>
         <Filter
@@ -41,8 +41,30 @@ function App() {
           onChangeOption={handleChangeOption}
           onAddColor={handleAddColor}
         />
-        <CodeComponent variant={variant} />
+        <CodeComponent
+          variant={variant}
+          color={currentBtnColor}
+          size={sizeRange}
+          radius={radiusRange}
+        />
       </FlexContainer>
+      {/* <Button variant='Default'>Button</Button>
+      <Button
+        variant='Filled'
+        color='#FA5252'
+        size='2'
+        radius='2'
+      >
+        Button
+      </Button>
+      <Button
+        variant='Filled'
+        color='#FAB005'
+        size='5'
+        radius='5'
+      >
+        Button
+      </Button> */}
     </>
   );
 }

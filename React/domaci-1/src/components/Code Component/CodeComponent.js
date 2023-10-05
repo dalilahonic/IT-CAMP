@@ -1,13 +1,16 @@
 import classes from './CodeComponent.module.css';
 
 function CodeComponent({ variant, color, size, radius }) {
-  let codeString = `<Button variant='${variant}'`;
+  let codeString = `<Button variant='${variant}' `;
 
-  if (color) codeString += `color=${color}`;
+  if (color && color !== '#4C6EF5')
+    codeString += `color='${color}' `;
 
-  if (size) codeString += `size=${size}`;
+  if (size && Number(size) !== 2)
+    codeString += `size='${size}' `;
 
-  if (radius) codeString += `radius: ${radius}`;
+  if (radius && Number(radius) !== 2)
+    codeString += `radius='${radius}' `;
 
   codeString += '>Button</Button>';
 
