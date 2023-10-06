@@ -1,4 +1,27 @@
-function Button({ color, variant, size, radius }) {
+function Button({
+  color = 'hsl(228, 89%, 63%)',
+  variant = 'Filled',
+  size = 2,
+  radius = 2,
+}) {
+  function calculateBackground(color) {
+    let lightColors = color
+      .slice(4, -2)
+      .split(',')
+      .map((num, index) => {
+        if (index === 0) {
+          return num;
+        } else {
+          return index === 1
+            ? `${parseFloat(num) - 30}%`
+            : `${parseFloat(num) + 30}%`;
+        }
+      })
+      .join(',');
+
+    return `hsl(${lightColors})`;
+  }
+
   let variantStyles = {
     Outline: {
       border: `1px solid ${color}`,
@@ -16,7 +39,11 @@ function Button({ color, variant, size, radius }) {
       outline: 'none',
       color: 'white',
     },
-    Light: { color: color },
+    Light: {
+      color: color,
+      border: 'none',
+      backgroundColor: calculateBackground(color),
+    },
     Subtle: {
       color: color,
       backgroundColor: 'white',
@@ -34,51 +61,78 @@ function Button({ color, variant, size, radius }) {
     },
   };
 
-  let styleProperty = variantStyles[variant];
+  let styleProperty = { ...variantStyles[variant] };
 
-  function getBtnSize(size) {
-    const widths = [null, 66, 80, 94, 108, 122];
-    const heights = [null, 30, 36, 42, 48, 54];
-    const defaultWidth = 80;
-    const defaultHeight = 36;
+  const buttonSize = {
+    width: `${66 + (size - 1) * 14}px`,
+    height: `${30 + (size - 1) * 6}px`,
+    fontSize: `${size * 2 + 12}px`,
+  };
 
-    return {
-      width:
-        `${widths[Number(size)]}px` || `${defaultWidth}px`,
-      height:
-        `${heights[Number(size)]}px` ||
-        `${defaultHeight}px`,
-      fontSize: `${Number(size) * 2 + 12}px` || '16px',
-    };
-  }
-
-  // function getRadius(radius) {
-  //   const radiusValues = [null, 2, 5, 8, 11, 14];
-  //   const defaultRadius = 5;
-
-  //   return {
-  //     borderRadius:
-  //       `${radiusValues[Number(radius)]}px` ||
-  //       `${defaultRadius}px`,
-  //   };
-  // }
-
-  function getRadius(radius) {
-    return {
-      borderRadius: `${2 + (radius - 1) * 3}px` || '5px',
-    };
-  }
+  const radiusStyle = {
+    borderRadius: `${2 + (radius - 1) * 3}px`,
+  };
 
   let styles = {
     ...styleProperty,
-    ...getBtnSize(size),
-    ...getRadius(radius),
+    ...buttonSize,
+    ...radiusStyle,
   };
 
   return <button style={styles}>Button</button>;
 }
 
 export default Button;
+
+//..........................................................
+
+// function getBtnSize(size) {
+//   return {
+//     width: `${66 + (Number(size) - 1) * 14}px`,
+//     height: `${30 + (Number(size) - 1) * 6}px`,
+//     fontSize: `${Number(size) * 2 + 12}px`,
+//   };
+// }
+
+// function getBtnSize(size) {
+//   const widths = [null, 66, 80, 94, 108, 122];
+//   const heights = [null, 30, 36, 42, 48, 54];
+//   const defaultWidth = 80;
+//   const defaultHeight = 36;
+
+//   return {
+//     width:
+//       `${widths[Number(size)]}px` || `${defaultWidth}px`,
+//     height:
+//       `${heights[Number(size)]}px` ||
+//       `${defaultHeight}px`,
+//     fontSize: `${Number(size) * 2 + 12}px` || '16px',
+//   };
+// }
+
+// function getRadius(radius) {
+//   const radiusValues = [null, 2, 5, 8, 11, 14];
+//   const defaultRadius = 5;
+
+//   return {
+//     borderRadius:
+//       `${radiusValues[Number(radius)]}px` ||
+//       `${defaultRadius}px`,
+//   };
+// }
+
+// function getRadius(radius) {
+//   return {
+//     borderRadius: `${2 + (radius - 1) * 3}px`,
+//   };
+// }
+
+// let styles = {
+//   ...styleProperty,
+//   ...getBtnSize(size),
+//   ...getRadius(radius),
+// };
+//..................................................
 
 // switch (variant) {
 //   case 'Outline':

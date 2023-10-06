@@ -1,6 +1,7 @@
 import './RangeInput.module.css';
 
 function RangeInput({ onChangeInput, className }) {
+  
   function handleChange(range, inputClass) {
     onChangeInput(range, inputClass);
   }

@@ -1,22 +1,37 @@
 import FlexContainer from '../Flex Container/FlexContiner';
 import ColorButton from '../Color Buttons/ColorButton';
-import classes from './Filter.module.css';
 import Option from '../Options/Options';
 import RangeInput from '../Range Input/RangeInput';
+import classes from './Filter.module.css';
+
+// const buttonColors = [
+//   '#868E96',
+//   '#FA5252',
+//   '#E64980',
+//   '#BE4BDB',
+//   '#7950F2',
+//   '#4C6EF5',
+//   '#15AABF',
+//   '#12B886',
+//   '#40C057',
+//   '#82C91E',
+//   '#FAB005',
+//   '#FC7E14',
+// ];
 
 const buttonColors = [
-  '#868E96',
-  '#FA5252',
-  '#E64980',
-  '#BE4BDB',
-  '#7950F2',
-  '#4C6EF5',
-  '#15AABF',
-  '#12B886',
-  '#40C057',
-  '#82C91E',
-  '#FAB005',
-  '#FC7E14',
+  'hsl(210, 7%, 56%)',
+  'hsl(0, 94%, 65%)',
+  'hsl(339, 76%, 59%)',
+  'hsl(288, 67%, 58%)',
+  'hsl(255, 86%, 63%)',
+  'hsl(228, 89%, 63%)',
+  ' hsl(187, 80%, 42%)',
+  'hsl(162, 82%, 40%)',
+  'hsl(131, 50%, 50%)',
+  'hsl(85, 74%, 45%)',
+  'hsl(42, 96%, 50%)',
+  'hsl(27, 97%, 53%)',
 ];
 
 const options = [
@@ -33,7 +48,6 @@ function Filter({
   onAddColor,
   onChangeOption,
   onChangeRange,
-  onChangeRadius,
 }) {
   function handleClickColor(btnColor) {
     onAddColor(btnColor);
@@ -55,13 +69,13 @@ function Filter({
           onChange={(e) => handleChange(e.target.value)}
         >
           {options.map((el, index) => {
-            if (el === 'Filled') {
-              return (
-                <Option value={el} key={index} isSelected />
-              );
-            } else {
-              return <Option value={el} key={index} />;
-            }
+            return (
+              <Option
+                value={el}
+                key={index}
+                isSelected={el === 'Filled'}
+              />
+            );
           })}
         </select>
       </div>
@@ -71,7 +85,7 @@ function Filter({
           <ColorButton
             btnColor={el}
             key={index}
-            onClcikColor={handleClickColor}
+            onClickColor={handleClickColor}
           />
         ))}
       </div>
@@ -91,3 +105,15 @@ function Filter({
   );
 }
 export default Filter;
+
+// {
+//   /* {options.map((el, index) => {
+//   if (el === 'Filled') {
+//     return (
+//       <Option value={el} key={index} isSelected />
+//     );
+//   } else {
+//     return <Option value={el} key={index} />;
+//   }
+// })} */
+// }

@@ -4,7 +4,8 @@ function FlexContainer({ children, className }) {
   return (
     <div
       className={`${classes.flexContainer} ${className}`}
-    >{children}
+    >
+      {children}
     </div>
   );
 }

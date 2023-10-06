@@ -5,8 +5,9 @@ import FlexContainer from './components/Flex Container/FlexContiner';
 import CodeComponent from './components/Code Component/CodeComponent';
 
 function App() {
-  const [currentBtnColor, setCurrentBtnColor] =
-    useState('#4C6EF5');
+  const [currentBtnColor, setCurrentBtnColor] = useState(
+    'hsl(228, 89%, 63%)'
+  );
   const [variant, setVariant] = useState('Filled');
   const [sizeRange, setSizeRange] = useState(2);
   const [radiusRange, setRadiusRange] = useState(2);
@@ -48,23 +49,6 @@ function App() {
           radius={radiusRange}
         />
       </FlexContainer>
-      {/* <Button variant='Default'>Button</Button>
-      <Button
-        variant='Filled'
-        color='#FA5252'
-        size='2'
-        radius='2'
-      >
-        Button
-      </Button>
-      <Button
-        variant='Filled'
-        color='#FAB005'
-        size='5'
-        radius='5'
-      >
-        Button
-      </Button> */}
     </>
   );
 }
