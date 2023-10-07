@@ -170,4 +170,3 @@ function App() {
 
 export default App;
 
-// da biras da li da filtriras po titleu descriptinu ili po datumu. ukljuci sve

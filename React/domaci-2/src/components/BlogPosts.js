@@ -1,8 +1,4 @@
-import classes from './BlogPosts.module.css';
-
 function BlogPost({ title, description, date }) {
-
-
   return (
     <div>
       <h1>{title}</h1>
