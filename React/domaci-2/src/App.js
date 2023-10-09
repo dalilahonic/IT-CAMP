@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import BlogPost from './components/BlogPosts';
 import SearchInput from './components/SearchInput';
 
@@ -169,4 +168,3 @@ function App() {
 }
 
 export default App;
-

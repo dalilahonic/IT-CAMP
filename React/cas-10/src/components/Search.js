@@ -34,10 +34,10 @@ function Search() {
       .includes(searchFilter.toLowerCase())
   );
 
-  console.log(filteredArr);
+  // console.log(filteredArr);
 
   return (
-    <div classname='parent'>
+    <div className='parent'>
       {filteredArr.map((el, index) => {
         return (
           <div key={index}>
