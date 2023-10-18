@@ -1,0 +1,22 @@
+p.active {
+  background-color: red;
+}
+
+p {
+  font-size: 25px;
+}
+
+.accordion {
+  width: 500px;
+  height: 60px;
+  background-color: grey;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  display: flex;
+  gap: 10px;
+}
