@@ -1,0 +1,34 @@
+* {
+  font-family: sans-serif;
+}
+
+form.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px;
+}
+
+.form input {
+  width: 30%;
+  height: 36px;
+  padding-inline: 10px;
+  font-size: 18px;
+}
+
+.form button {
+  width: 10%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  border: 1px solid black;
+}
+
+.form button:hover {
+  cursor: pointer;
+}
+
+form.form p {
+  color: red;
+}
