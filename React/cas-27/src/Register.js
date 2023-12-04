@@ -9,51 +9,74 @@ function Register() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [text, setText] = useState('');
 
-  const handleRegister = (e) => {
-    e.preventDefault();
-
-    if (name.length < 3 || email.length < 3) {
-      setError(
-        'All fields must contain more than 3 characters'
+  const handleRegister = async () => {
+    try {
+      const response = await fetch(
+        'https://dummyjson.com/users/add',
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            firstName: 'Muhammad',
+            lastName: 'Ovi',
+            age: 250,
+            /* other user data */
+          }),
+        }
       );
-      return;
+      const data = await response.json();
+
+      console.log(data);
+    } catch (error) {
+      console.log(error);
     }
-
-    if (
-      !email.includes('@') ||
-      !email.includes('.') ||
-      email.split('.')[1]?.length < 2
-    ) {
-      setError('Email is not valid');
-      return;
-    }
-
-    if (password.length < 8) {
-      setError('Password must have at least 8 characters');
-      return;
-    }
-
-    if (password.toLowerCase() === password) {
-      setError(
-        'Password must have at least one capital letter'
-      );
-      return;
-    }
-
-    if (password !== secondPassword) {
-      setError('Passwords do not match');
-      return;
-    }
-
-    setName('');
-    setEmail('');
-    setPassword('');
-    setSecondPassword('');
-    setError('');
-
-    setIsLoggedIn(true);
-    setText('You are logged in');
   };
+
+  // const handleRegister = (e) => {
+  //   e.preventDefault();
+
+  //   if (name.length < 3 || email.length < 3) {
+  //     setError(
+  //       'All fields must contain more than 3 characters'
+  //     );
+  //     return;
+  //   }
+
+  //   if (
+  //     !email.includes('@') ||
+  //     !email.includes('.') ||
+  //     email.split('.')[1]?.length < 2
+  //   ) {
+  //     setError('Email is not valid');
+  //     return;
+  //   }
+
+  //   if (password.length < 8) {
+  //     setError('Password must have at least 8 characters');
+  //     return;
+  //   }
+
+  //   if (password.toLowerCase() === password) {
+  //     setError(
+  //       'Password must have at least one capital letter'
+  //     );
+  //     return;
+  //   }
+
+  //   if (password !== secondPassword) {
+  //     setError('Passwords do not match');
+  //     return;
+  //   }
+
+  //   setName('');
+  //   setEmail('');
+  //   setPassword('');
+  //   setSecondPassword('');
+  //   setError('');
+
+  //   setIsLoggedIn(true);
+  //   setText('You are logged in');
+  // };
 
   return (
     <>

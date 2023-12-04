@@ -5,6 +5,8 @@ import {
 } from 'react-router-dom';
 import Login from './Login';
 import Register from './Register';
+import UserContextProvider from './UserContextProvider';
+import Home from './Home';
 
 function App() {
   const router = createBrowserRouter([
@@ -15,8 +17,13 @@ function App() {
       element: <p>You are logged in</p>,
     },
     { path: '/register', element: <Register /> },
+    { path: '/home', element: <Home /> },
   ]);
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <UserContextProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </UserContextProvider>
+  );
 }
 
 export default App;
