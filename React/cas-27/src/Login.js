@@ -1,8 +1,5 @@
-
-
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-
 
 function Login() {
   const navigate = useNavigate();
@@ -62,7 +59,7 @@ function Login() {
     }
 
     loginAction(email, password);
-  };
+  }
 
   return (
     <div>
@@ -80,7 +77,7 @@ function Login() {
 
       <button onClick={handleLogin}>Login</button>
     </div>
-  );
+  )
 }
 
 export default Login;

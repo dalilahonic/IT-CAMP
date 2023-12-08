@@ -5,7 +5,7 @@ function UserContextProvider(props) {
   const [user, setUser] = useState('');
   return (
     <UserContext.Provider value={{ user, setUser }}>
-      <div>{props.children}</div>;
+      <div>{props.children}</div>
     </UserContext.Provider>
   );
 }
