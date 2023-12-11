@@ -1,5 +1,6 @@
 import './App.css';
-import Search from './Find';
+import Find from './Find';
+import List from './List';
 import SimpleComponent from './SimpleComponent';
 import { useState } from 'react';
 
@@ -11,7 +12,8 @@ function App() {
         {count}
       </p>
       <SimpleComponent />
-      <Search />
+      <Find />
+      <List data={[{title: 'Prvi', }]} />
     </>
   );
 }
